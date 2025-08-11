@@ -31,15 +31,15 @@ export default async function ArtistDetail({ params }: { params: Promise<Params>
   const relatedEvents = events.filter(ev => ev.speakers && ev.speakers.includes(artist.id));
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      <div className="mb-6">
+    <div className="max-w-4xl mx-auto px-3 sm:px-4 lg:px-6 py-6 sm:py-8 container-responsive">
+      <div className="mb-4 sm:mb-6">
         <BackButton />
       </div>
-      <h2 className="text-base lg:text-xl font-sans font-bold mb-4 japanese-text">{artist.name}</h2>
+      <h2 className="text-responsive-base sm:text-responsive-lg lg:text-responsive-xl font-sans font-bold mb-3 sm:mb-4 japanese-text break-words">{artist.name}</h2>
       
-      <div className="mb-2 flex gap-6 items-start">
-        <div className="flex-shrink-0">
-          <div className="w-60 h-60 rounded-lg overflow-hidden shadow-md bg-gray-200">
+      <div className="mb-2 flex flex-col lg:flex-row gap-4 sm:gap-6 items-start">
+        <div className="flex-shrink-0 w-full lg:w-auto">
+          <div className="w-full max-w-sm mx-auto lg:mx-0 lg:w-48 xl:w-60 aspect-square rounded-lg overflow-hidden shadow-md bg-gray-200 responsive-image-container">
             <Image 
               src={artist.image.startsWith('http') ? artist.image : `/images/${artist.image}`}
               alt={artist.name}
@@ -47,17 +47,17 @@ export default async function ArtistDetail({ params }: { params: Promise<Params>
               height={360}
               quality={100}
               priority={true}
-              sizes="(max-width: 768px) 100vw, 240px"
-              className="w-full h-full object-cover"
+              sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 192px, 240px"
+              className="w-full h-full object-cover responsive-image"
               unoptimized={artist.image.startsWith('http')}
             />
           </div>
         </div>
-        <div className="flex-shrink-2 flex flex-col w-80">
-          <div className="text-[18px] font-sans font-semibold mb-3 japanese-text">Profile</div>
-          <div className="flex-1 h-60 overflow-y-auto">
+        <div className="flex-1 w-full lg:max-w-none">
+          <div className="text-responsive-base sm:text-responsive-lg font-sans font-semibold mb-3 japanese-text">Profile</div>
+          <div className="max-h-none lg:max-h-60 lg:overflow-y-auto">
             {artist.bio.map((para: string, idx: number) => (
-              <p key={idx} className="mb-6 text-gray-800 japanese-text profile-tiny-text">
+              <p key={idx} className="mb-4 sm:mb-6 text-gray-800 japanese-text text-responsive-xs sm:text-responsive-sm leading-relaxed break-words">
                 {para}
               </p>
             ))}
@@ -157,23 +157,23 @@ export default async function ArtistDetail({ params }: { params: Promise<Params>
       {/* Artworks Section */}
       {artist.artworks && artist.artworks.length > 0 && (
         <div className="mt-0 mb-4">
-          <div className="text-[18px] font-sans font-semibold mb-3 japanese-text border-b border-gray-200 pb-1">Photos</div>
-          <div className="grid grid-cols-4 gap-2">
+          <div className="text-responsive-base sm:text-responsive-lg font-sans font-semibold mb-3 japanese-text border-b border-gray-200 pb-1">Photos</div>
+          <div className="responsive-grid-3 gap-2 sm:gap-3 lg:gap-4">
             {artist.artworks.map((artwork, index) => (
               <div key={artwork.id} className="group cursor-pointer">
-                <div className="relative overflow-hidden rounded-md shadow-md bg-gray-100 aspect-[3/4]">
+                <div className="relative overflow-hidden rounded-md shadow-md bg-gray-100 aspect-[3/4] responsive-image-container">
                   <Image
                     src={artwork.image}
                     alt={artwork.title}
                     fill
                     quality={100}
-                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                    className="object-cover transition-all duration-300 group-hover:scale-102"
+                    sizes="(max-width: 475px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 20vw"
+                    className="responsive-image object-cover transition-all duration-300 group-hover:scale-105"
                     unoptimized={artwork.image.startsWith('http')}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-2 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                    <h3 className="text-sm font-medium japanese-text line-clamp-1">
+                  <div className="absolute bottom-0 left-0 right-0 p-1 sm:p-2 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                    <h3 className="text-responsive-xs font-medium japanese-text line-clamp-1 break-words">
                       {artwork.title}
                     </h3>
                   </div>
@@ -190,7 +190,7 @@ export default async function ArtistDetail({ params }: { params: Promise<Params>
           <ul className="list-disc list-inside text-gray-800 space-y-2">
             {relatedChapters.map((ch: Chapter) => (
               <li key={ch.id}>
-                <Link href={`/chapters/${ch.id}`} className="hover:underline japanese-text text-gray-600 hover:text-black">
+                <Link href={`/#chapter-${ch.id}`} className="hover:underline japanese-text text-gray-600 hover:text-black">
                   {ch.title}
                 </Link>
               </li>

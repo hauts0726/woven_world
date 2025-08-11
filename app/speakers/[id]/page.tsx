@@ -31,30 +31,32 @@ export default async function SpeakerDetail({ params }: { params: Promise<Params
   const relatedEvents = events.filter(ev => ev.speakers && ev.speakers.includes(speaker.id));
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8 ">
-      <div className="mb-6">
+    <div className="max-w-4xl mx-auto px-3 sm:px-4 lg:px-6 py-6 sm:py-8 container-responsive">
+      <div className="mb-4 sm:mb-6">
         <BackButton />
       </div>
-      <h2 className="text-base lg:text-xl font-sans font-bold mb-4 japanese-text"> {speaker.name.split('(')[0]}</h2>
-      <div className="mb-2 flex gap-6 items-start">
-                <div className="flex-shrink-0"></div>
-        <div className="w-60 h-60 rounded-lg overflow-hidden shadow-md bg-gray-200">
-          <Image 
-            src={speaker.image.startsWith('http') ? speaker.image : `/images/${speaker.image}`}
-            alt={speaker.name}
-            width={360}
-            height={360}
-            quality={100}
-            priority={true}
-            sizes="(max-width: 768px) 100vw, 320px"
-            className="w-80 h-80 object-cover rounded-lg shadow-md"
-          />
+      <h2 className="text-responsive-base sm:text-responsive-lg lg:text-responsive-xl font-sans font-bold mb-3 sm:mb-4 japanese-text break-words">{speaker.name.split('(')[0]}</h2>
+      <div className="mb-2 flex flex-col lg:flex-row gap-4 sm:gap-6 items-start">
+        <div className="flex-shrink-0 w-full lg:w-auto">
+          <div className="w-full max-w-sm mx-auto lg:mx-0 lg:w-48 xl:w-60 aspect-square rounded-lg overflow-hidden shadow-md bg-gray-200 responsive-image-container">
+            <Image 
+              src={speaker.image.startsWith('http') ? speaker.image : `/images/${speaker.image}`}
+              alt={speaker.name}
+              width={360}
+              height={360}
+              quality={100}
+              priority={true}
+              sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 192px, 240px"
+              className="w-full h-full object-cover responsive-image"
+              unoptimized={speaker.image.startsWith('http')}
+            />
+          </div>
         </div>
-        <div className="flex-shrink-2 flex flex-col w-80">
-          <div className="text-[18px] font-sans font-semibold mb-3 japanese-text">Profile</div>
-          <div className="flex-1 overflow-y-auto pr-2">
+        <div className="flex-1 w-full lg:max-w-none">
+          <div className="text-responsive-base sm:text-responsive-lg font-sans font-semibold mb-3 japanese-text">Profile</div>
+          <div className="max-h-none lg:max-h-60 lg:overflow-y-auto lg:pr-2">
             {speaker.bio.map((para: string, idx: number) => (
-              <p key={idx} className="mb-6 text-gray-800 japanese-text profile-tiny-text">
+              <p key={idx} className="mb-4 sm:mb-6 text-gray-800 japanese-text text-responsive-xs sm:text-responsive-sm leading-relaxed break-words">
                 {para}
               </p>
             ))}

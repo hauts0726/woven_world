@@ -67,24 +67,25 @@ export default function SimpleNavigation() {
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
-      <div className="w-full px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* ロゴ */}
-          <Link href="/" className="text-xl font-serif font-bold text-gray-900 hover:text-gray-700 transition-colors">
-            Clothing and Our Future
+      <div className="w-full px-3 sm:px-4 lg:px-6 xl:px-8">
+        <div className="flex items-center justify-between h-14 sm:h-16">
+          {/* ロゴ - レスポンシブ対応 */}
+          <Link href="/" className="text-responsive-base sm:text-responsive-lg lg:text-responsive-xl font-serif font-bold text-gray-900 hover:text-gray-700 transition-colors break-words leading-tight">
+            <span className="hidden sm:inline">Clothing and Our Future</span>
+            <span className="sm:hidden">C&OF</span>
           </Link>
 
-          {/* ナビゲーションメニュー */}
-          <nav className="hidden md:flex items-center space-x-1">
+          {/* ナビゲーションメニュー - レスポンシブ対応 */}
+          <nav className="hidden md:flex items-center space-x-1 lg:space-x-2">
             {isHomePage ? (
               <button 
                 onClick={() => handleSmoothScroll('top')} 
-                className={navLinkClass}
+                className={`${navLinkClass} text-responsive-xs lg:text-responsive-sm`}
               >
                 TOP
               </button>
             ) : (
-              <Link href="/" className={navLinkClass}>
+              <Link href="/" className={`${navLinkClass} text-responsive-xs lg:text-responsive-sm`}>
                 TOP
               </Link>
             )}
@@ -92,12 +93,12 @@ export default function SimpleNavigation() {
             {isHomePage ? (
               <button 
                 onClick={() => handleSmoothScroll('chapters')} 
-                className={navLinkClass}
+                className={`${navLinkClass} text-responsive-xs lg:text-responsive-sm`}
               >
                 Chapters
               </button>
             ) : (
-              <Link href="/chapters" className={navLinkClass}>
+              <Link href="/chapters" className={`${navLinkClass} text-responsive-xs lg:text-responsive-sm`}>
                 Chapters
               </Link>
             )}
@@ -105,12 +106,12 @@ export default function SimpleNavigation() {
             {isHomePage ? (
               <button 
                 onClick={() => handleSmoothScroll('events')} 
-                className={navLinkClass}
+                className={`${navLinkClass} text-responsive-xs lg:text-responsive-sm`}
               >
                 Events
               </button>
             ) : (
-              <Link href="/events" className={navLinkClass}>
+              <Link href="/events" className={`${navLinkClass} text-responsive-xs lg:text-responsive-sm`}>
                 Events
               </Link>
             )}
@@ -119,7 +120,7 @@ export default function SimpleNavigation() {
               href="https://note.com/woven_world" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className={navLinkClass}
+              className={`${navLinkClass} text-responsive-xs lg:text-responsive-sm`}
             >
               Articles
             </a>
@@ -128,12 +129,12 @@ export default function SimpleNavigation() {
               href="https://open.spotify.com/show/3pXhDNK8sLEKr6wKlFZGRN" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className={navLinkClass}
+              className={`${navLinkClass} text-responsive-xs lg:text-responsive-sm`}
             >
               Podcast
             </a>
             
-            <Link href="/contact" className={navLinkClass}>
+            <Link href="/contact" className={`${navLinkClass} text-responsive-xs lg:text-responsive-sm`}>
               Contact
             </Link>
           </nav>

@@ -453,31 +453,78 @@ body {
   }
 }
 
-/* Full-width video background fix */
+/* Full-width video background fix - No gray background visible */
 .hero-video {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw !important;
-  height: 100vh !important;
+  top: 50%;
+  left: 50%;
+  width: 200vw !important;
+  height: 200vh !important;
+  min-width: 200vw !important;
+  min-height: 200vh !important;
   object-fit: cover;
   object-position: center center;
+  transform: translate(-50%, -50%) scale(1.5);
   z-index: -1;
+  background: transparent;
 }
 
-/* Ensure hero section takes full width */
+/* Ensure hero section takes full width with no background showing */
 .hero-section {
   width: 100vw !important;
   margin-left: calc(-50vw + 50%) !important;
   position: relative;
   overflow: hidden;
+  background: transparent !important;
 }
 
-/* Fix for any container constraints */
-.full-width-container {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  position: relative;
+/* Ensure no background color shows through */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  right: -50px;
+  bottom: -50px;
+  background: transparent;
+  z-index: -2;
+}
+
+/* Additional video styling to eliminate letterboxing */
+.hero-section video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200vw !important;
+  height: 200vh !important;
+  min-width: 200vw !important;
+  min-height: 200vh !important;
+  object-fit: cover;
+  object-position: center center;
+  transform: translate(-50%, -50%) scale(1.5);
+  z-index: -1;
+  background: transparent;
+}
+
+/* Force video to fill entire viewport without letterboxing */
+@media (max-aspect-ratio: 16/9) {
+  .hero-video,
+  .hero-section video {
+    width: 300vh !important;
+    height: auto !important;
+    min-width: 300vh !important;
+    min-height: 100vh !important;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .hero-video,
+  .hero-section video {
+    width: auto !important;
+    height: 300vw !important;
+    min-width: 100vw !important;
+    min-height: 300vw !important;
+  }
 }
 
 /* Container queries support */
@@ -991,7 +1038,7 @@ p {
 }
 
 .event-speaker-name {
-  font-size: 1.2rem !important;
+  font-size: 1.125rem !important;
   line-height: 1.4 !important;
 }
 

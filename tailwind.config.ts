@@ -43,7 +43,7 @@ const config: Config = {
         '7xl': ['4.5rem', { lineHeight: '1' }],
         '8xl': ['6rem', { lineHeight: '1' }],
         '9xl': ['8rem', { lineHeight: '1' }],
-        // Fluid responsive font sizes
+        // Enhanced fluid responsive font sizes
         'fluid-xs': 'clamp(0.75rem, 1.5vw, 0.875rem)',
         'fluid-sm': 'clamp(0.875rem, 2vw, 1rem)',
         'fluid-base': 'clamp(1rem, 2.5vw, 1.125rem)',
@@ -53,6 +53,16 @@ const config: Config = {
         'fluid-3xl': 'clamp(1.875rem, 5vw, 2.25rem)',
         'fluid-4xl': 'clamp(2.25rem, 6vw, 3rem)',
         'fluid-5xl': 'clamp(3rem, 8vw, 3.75rem)',
+        // Additional responsive sizes
+        'responsive-xs': 'clamp(0.8rem, 1.6vw, 0.95rem)',
+        'responsive-sm': 'clamp(0.95rem, 2.1vw, 1.08rem)',
+        'responsive-base': 'clamp(1.08rem, 2.7vw, 1.22rem)',
+        'responsive-lg': 'clamp(1.22rem, 3.2vw, 1.35rem)',
+        'responsive-xl': 'clamp(1.35rem, 3.8vw, 1.62rem)',
+        'responsive-2xl': 'clamp(1.62rem, 4.3vw, 2.03rem)',
+        'responsive-3xl': 'clamp(2.03rem, 5.4vw, 2.43rem)',
+        'responsive-4xl': 'clamp(2.43rem, 6.5vw, 3.24rem)',
+        'responsive-5xl': 'clamp(3.24rem, 8.6vw, 4.05rem)',
       }
     }
   },

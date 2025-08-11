@@ -21,7 +21,7 @@ export default function HomePage() {
   return (
     <div className="w-full home-page">
       {/* Hero Section with Video Background */}
-      <section id="top" className="hero-section relative mb-16 h-screen overflow-hidden">
+      <section id="top" className="hero-section relative mb-8 sm:mb-12 lg:mb-16 h-screen overflow-hidden">
         {/* Background video */}
         <video
           autoPlay
@@ -38,14 +38,14 @@ export default function HomePage() {
         </video>
 
         {/* Overlay and Text */}
-        <div className="absolute inset-0 bg-white bg-opacity-80 flex items-center justify-center z-10">
-          <div className="text-center fluid-p-md w-full max-w-6xl mx-auto">
-            <h1 className="top-hero-main-title font-sans font-bold mb-8 text-gray-700 japanese-text">
+        <div className="absolute inset-0 bg-white bg-opacity-80 flex items-center justify-center z-10 px-4 sm:px-6 lg:px-8">
+          <div className="text-center w-full max-w-6xl mx-auto container-responsive">
+            <h1 className="text-responsive-4xl sm:text-responsive-5xl font-sans font-bold mb-4 sm:mb-6 lg:mb-8 text-gray-700 japanese-text leading-tight break-words">
               衣服とわたしたちのこれから
             </h1>
-            <p className="top-hero-subtitle text-gray-700 mb-4 japanese-text">– わたしたちは、なにをまとい、なにを未来へ残すのか –</p>
-            <p className="top-hero-date text-gray-600 italic">
-              On view April 15 – June 1, 2026, Tokyo, Japan
+            <p className="text-responsive-lg sm:text-responsive-xl text-gray-700 mb-3 sm:mb-4 japanese-text leading-relaxed break-words">– わたしたちは、なにをまとい、なにを未来へ残すのか –</p>
+            <p className="text-responsive-base sm:text-responsive-lg text-gray-600 italic break-words">
+              On view April 22 – June 21, 2026— BUG, Tokyo, Japan
             </p>
           </div>
         </div>
@@ -53,11 +53,11 @@ export default function HomePage() {
       </section>
 
       {/* Intro Text - Minimal & Beautiful Design */}
-      <section id="intro" className="min-h-screen flex flex-col justify-center mb-24 fluid-p-md w-full mx-auto relative">
+      <section id="intro" className="min-h-screen flex flex-col justify-center mb-12 sm:mb-16 lg:mb-24 px-4 sm:px-6 lg:px-8 w-full mx-auto relative container-responsive">
         {/* Section Header with Subtle Accent */}
-        <div className="text-center mb-4 mt-20">
-          <div className="inline-block relative min-w-max">
-            <h2 className="fluid-text-xl font-light tracking-wide mb-2 text-gray-800 japanese-text whitespace-nowrap min-w-max inline-block">
+        <div className="text-center mb-4 mt-12 sm:mt-16 lg:mt-20">
+          <div className="inline-block relative">
+            <h2 className="text-responsive-xl sm:text-responsive-2xl font-light tracking-wide mb-2 text-gray-800 japanese-text break-words">
               はじめに
             </h2>
           </div>
@@ -65,52 +65,52 @@ export default function HomePage() {
 
         {/* Main Content with Enhanced Typography */}
         <div className="flex justify-center w-full">
-          <div className="prose prose-lg max-w-7xl fluid-p-sm">
-            <div className="space-y-10 text-gray-700 leading-loose japanese-text">
+          <div className="prose prose-lg max-w-7xl w-full">
+            <div className="space-y-6 sm:space-y-8 lg:space-y-10 text-gray-700 leading-loose japanese-text">
               {/* First paragraph with emphasis */}
-              <p className="fluid-text-xl font-light leading-relaxed text-gray-600 mb-8 text-center italic">
+              <p className="text-responsive-lg sm:text-responsive-xl font-light leading-relaxed text-gray-600 mb-6 sm:mb-8 text-center italic break-words">
                 わたしたちは、なにをまとい、なにを未来へ残すのか。
               </p>
 
               {/* Main content paragraphs */}
-              <div className="mt-12 space-y-6 fluid-text-lg leading-loose">
-                <p className="text-left mt-2">
+              <div className="mt-8 sm:mt-10 lg:mt-12 space-y-4 sm:space-y-5 lg:space-y-6 text-responsive-base sm:text-responsive-lg leading-loose">
+                <p className="text-left mt-2 break-words">
                   本来なら捨てられるはずだった着物を見つめながら、「この着物を、もっと生かす方法はないだろうか」。
                 </p>
 
-                <p className="text-left mb-2">
+                <p className="text-left mb-2 break-words">
                   愛知県豊田市で地域創生に取り組む友人が、そう私につぶやいたことがキッカケとなり、この企画が生まれました。
                 </p>
 
-                <p className="text-left mb-2">
+                <p className="text-left mb-2 break-words">
                   かつて衣服は、直し、譲り、受け継ぎながら大切にされてきましたが、その記憶や背景は静かに埋もれつつあります。
                 </p>
 
-                <p className="text-left mb-2 pb-6">
+                <p className="text-left mb-2 pb-4 sm:pb-6 break-words">
                   「まとう」という行為も、自己表現や社会とのつながりという意味を、どこかで手放しつつあるのではないでしょうか。
                 </p>
                 
 
-                <p className="text-left mb-2">
+                <p className="text-left mb-2 break-words">
                   本展は、素材との出会いから未来の装いをたどり、
                 </p>
 
-                <p className="text-left mb-2">
+                <p className="text-left mb-2 break-words">
                   来場者との対話の場を作るだけでなく、様々な視点から掘り下げるトークイベントやワークショップを全5回開催。
                 </p>
 
-                <p className="text-left mb-2">
+                <p className="text-left mb-2 break-words">
                   裂き織りやバイオ技術、AIなど、多様な手法を用いた作家20名とゲスト８名を迎え、各章に呼応する形で紹介します。
                 </p>
 
                 {/* Closing statement with special styling */}
-                <div className="mt-6 pt-6 relative pb-6">
-                  <p className="text-left text-lg md:text-xl leading-loose text-gray-600 mb-8 japanese-text">
+                <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 relative pb-4 sm:pb-6">
+                  <p className="text-left text-responsive-base sm:text-responsive-lg leading-loose text-gray-600 mb-6 sm:mb-8 japanese-text break-words">
                     衣服にまつわる記憶や素材、社会との関係に目を向け、まとうことの意味や広がりを考える機会となれば幸いです。
                   </p>
                   
-                  {/* 企画者クレジット - 右下に配置 */}
-                  <div className="absolute bottom-1 right-0 text-base text-gray-600 japanese-text">
+                  {/* 企画者クレジット - 右下に配置（レスポンシブ対応） */}
+                  <div className="text-right sm:absolute sm:bottom-1 sm:right-0 text-responsive-sm text-gray-600 japanese-text mt-4 sm:mt-0">
                     企画者　鈴木 祐太
                   </div>
                 </div>
@@ -125,10 +125,6 @@ export default function HomePage() {
 
       {/* Chapters Section */}
       <section id="chapters" className="w-full">
-        <div className="px-4 sm:px-6 lg:px-8 py-8 bg-gray-50">
-          <div className="text-3xl font-sans font-semibold text-center japanese-text">各章の紹介</div>
-        </div>
-        
         <div className="scroll-smooth">
           {(chapters as Chapter[]).map((chapter, index) => {
             // 各章の作家を取得
@@ -368,19 +364,17 @@ export default function HomePage() {
                                             ))}
                                           </div>
                                         ) : (
-                                          <h4 className="text-xl font-bold japanese-text mb-2 leading-tight text-white drop-shadow-lg">
+                                          <h4 className="text-xs sm:text-sm md:text-base font-bold japanese-text mb-1 leading-tight text-white drop-shadow-lg break-words">
                                             {mainArtist.name}
                                           </h4>
                                         )}
                                         
                                         {isCollaboration ? (
-                                          <p className="text-sm text-slate-200/90 japanese-text mb-3 font-medium drop-shadow-md">
+                                          <p className="text-xs text-slate-200/90 japanese-text mb-2 font-medium drop-shadow-md break-words">
                                             研究者
                                           </p>
                                         ) : (
-                                        <p className={`text-slate-200/90 japanese-text mb-3 drop-shadow-md ${
-                                          mainArtist.id === 'negishi_keisuke' || mainArtist.id === 'kuramochi-michiyo' || mainArtist.shortBio.includes('テキスタイルデザイナー') || mainArtist.shortBio.includes('ファッションデザイナー') ? 'text-[10px] leading-none whitespace-nowrap' : 'text-sm'
-                                        }`}>
+                                        <p className="text-xs text-slate-200/90 japanese-text mb-2 drop-shadow-md leading-tight break-words">
                                           {mainArtist.shortBio.split('。')[0]}
                                         </p>
                                         )}
