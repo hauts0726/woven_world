@@ -15,7 +15,6 @@ const nextConfig = {
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    quality: 100,
   },
 
   // i18n 言語設定（不要なら削除可）

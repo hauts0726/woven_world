@@ -19,8 +19,9 @@ export async function generateStaticParams() {
   return artists.map((a: Artist) => ({ id: a.id }));
 }
 
-export default function ArtistDetail({ params }: { params: Params }) {
-  const artist = artists.find(a => a.id === params.id);
+export default async function ArtistDetail({ params }: { params: Promise<Params> }) {
+  const { id } = await params;
+  const artist = artists.find(a => a.id === id);
   if (!artist) {
     notFound();
   }
