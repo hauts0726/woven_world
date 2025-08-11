@@ -155,7 +155,6 @@ p:lang(ja), span:lang(ja), div:lang(ja) {
 }
 
 /* Apply to elements containing Japanese characters (Hiragana, Katakana, Kanji) */
-*:has-text(/[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/),
 .contains-japanese {
   font-family: var(--font-shippori-mincho), serif !important;
 }

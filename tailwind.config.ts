@@ -57,7 +57,6 @@ const config: Config = {
     }
   },
   plugins: [
-    require('@tailwindcss/line-clamp'),
     function({ addUtilities }: any) {
       const newUtilities = {
         '.fluid-text-xs': {

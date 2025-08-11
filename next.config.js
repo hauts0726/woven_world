@@ -3,9 +3,6 @@ const nextConfig = {
   // React の厳格モードを有効化（開発中の潜在的な問題を検出）
   reactStrictMode: true,
 
-  // SWC による最適化を有効化（ビルド・トランスパイルの高速化）
-  swcMinify: true,
-
   // 画像ドメイン設定（必要であれば拡張）
   images: {
     remotePatterns: [
@@ -38,9 +35,6 @@ const nextConfig = {
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
-
-  // フォント最適化設定
-  optimizeFonts: true,
 
   // ビルド時のタイムアウト設定
   staticPageGenerationTimeout: 120,
