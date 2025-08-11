@@ -4,12 +4,19 @@ import SimpleNavigation from '@/components/SimpleNavigation';
 import Footer from '@/components/Footer';
 import SimpleTopButton from '@/components/SimpleTopButton';
 import ChapterSummary from '@/components/ChapterSummary';
-import { Inter } from 'next/font/google';
+import { Inter, Shippori_Mincho } from 'next/font/google';
 
 const inter = Inter({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-inter',
+  display: 'swap',
+});
+
+const shipporiMincho = Shippori_Mincho({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-shippori-mincho',
   display: 'swap',
 });
 
@@ -28,7 +35,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`bg-white text-gray-900 ${inter.variable} font-sans`}
+        className={`bg-white text-gray-900 ${inter.variable} ${shipporiMincho.variable}`}
       >
         <SimpleNavigation />
         <ChapterSummary />

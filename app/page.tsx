@@ -40,11 +40,11 @@ export default function HomePage() {
         {/* Overlay and Text */}
         <div className="absolute inset-0 bg-white bg-opacity-80 flex items-center justify-center z-10">
           <div className="text-center fluid-p-md w-full max-w-6xl mx-auto">
-            <h1 className="text-fluid-4xl font-sans font-bold mb-8 text-gray-700 japanese-text">
+            <h1 className="top-hero-main-title font-sans font-bold mb-8 text-gray-700 japanese-text">
               衣服とわたしたちのこれから
             </h1>
-            <p className="text-fluid-xl text-gray-700 mb-4 japanese-text">– わたしたちは、なにをまとい、なにを未来へ残すのか –</p>
-            <p className="text-fluid-base text-gray-600 italic">
+            <p className="top-hero-subtitle text-gray-700 mb-4 japanese-text">– わたしたちは、なにをまとい、なにを未来へ残すのか –</p>
+            <p className="top-hero-date text-gray-600 italic">
               On view April 15 – June 1, 2026, Tokyo, Japan
             </p>
           </div>
@@ -57,7 +57,7 @@ export default function HomePage() {
         {/* Section Header with Subtle Accent */}
         <div className="text-center mb-4 mt-20">
           <div className="inline-block relative min-w-max">
-            <h2 className="fluid-text-2xl font-light tracking-wide mb-2 text-gray-800 japanese-text whitespace-nowrap min-w-max inline-block">
+            <h2 className="fluid-text-xl font-light tracking-wide mb-2 text-gray-800 japanese-text whitespace-nowrap min-w-max inline-block">
               はじめに
             </h2>
           </div>
@@ -140,11 +140,9 @@ export default function HomePage() {
               <div key={chapter.id} id={`chapter-${chapter.id}`} className="min-h-screen flex flex-col justify-center" data-chapter-id={chapter.id}>
                 <ChapterAutoScroll chapterId={chapter.id}>
                   <div className="w-full max-w-screen-2xl text-center px-4 sm:px-6 lg:px-8 mx-auto py-4">
-                    <Link href={`/chapters/${chapter.id}`} className="group block">
-                      <h3 className="chapter-title-enhanced text-lg sm:text-xl md:text-2xl lg:text-3xl font-sans font-bold mb-4 text-gray-800 japanese-text group-hover:underline transform transition-all duration-1000 ease-out">
-                        {chapter.title}
-                      </h3>
-                    </Link>
+                    <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-sans font-bold mb-4 text-gray-800 japanese-text">
+                      {chapter.title}
+                    </h3>
                     
                     {/* Chapter Intro */}
                     <div className="mb-6 transform transition-all duration-1200 ease-out">

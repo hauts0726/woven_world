@@ -31,14 +31,14 @@ export default async function EventDetail({ params }: { params: Promise<Params> 
       <div className="mb-6">
         <BackButton />
       </div>
-      <h1 className="font-sans font-bold mb-6 japanese-text" style={{ fontSize: '1.5rem !important' }}>{event.title}</h1>
-      <p className="text-gray-600 font-sans mb-6 japanese-text" style={{ fontSize: '1rem !important' }}>
+      <h1 className="font-sans font-bold mb-6 japanese-text event-title">{event.title}</h1>
+      <p className="text-gray-600 font-sans mb-6 japanese-text event-date">
         {event.date} {event.time ? `· ${event.time}` : ''}
       </p>
 
       {eventSpeakers.length > 0 && (
         <div className="mb-8">
-          <h2 className="text-lg font-bold mb-6 japanese-text">登壇者</h2>
+          <h2 className="font-bold mb-6 japanese-text event-speakers-heading">登壇者</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {eventSpeakers.map((speaker) => (
               <div key={speaker.id} className="flex items-start space-x-6">
@@ -53,9 +53,9 @@ export default async function EventDetail({ params }: { params: Promise<Params> 
                 </div>
                 <div className="flex-1 min-w-0">
                   <Link href={`/speakers/${speaker.id}`} className="text-blue-600 hover:underline">
-                    <h3 className="font-bold japanese-text whitespace-nowrap overflow-hidden text-ellipsis" style={{ fontSize: '1.2rem !important' }}>{speaker.name.split('(')[0]}</h3>
+                    <h3 className="font-bold japanese-text whitespace-nowrap overflow-hidden text-ellipsis event-speaker-name">{speaker.name.split('(')[0]}</h3>
                   </Link>
-                  <p className="text-gray-600 mt-2 japanese-text leading-relaxed" style={{ fontSize: '1rem !important' }}>{speaker.shortBio}</p>
+                  <p className="text-gray-600 mt-2 japanese-text leading-relaxed event-speaker-bio">{speaker.shortBio}</p>
                 </div>
               </div>
             ))}

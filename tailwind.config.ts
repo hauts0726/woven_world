@@ -8,8 +8,11 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        serif: ['Georgia', 'serif']
+        sans: ['var(--font-shippori-mincho)', 'serif'],
+        serif: ['var(--font-shippori-mincho)', 'serif'],
+        'shippori': ['var(--font-shippori-mincho)', 'serif'],
+        'japanese': ['var(--font-shippori-mincho)', 'serif'],
+        'inter': ['var(--font-inter)', 'system-ui', 'sans-serif']
       },
       screens: {
         'xs': '475px',
