@@ -1,8 +1,8 @@
 import { prisma } from '../../../lib/prisma'
 import { notFound } from 'next/navigation'
 
-export default async function PostDetail({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
+export default async function PostDetail({ params }: { params: { id: string } }) {
+  const { id } = params;
   const post = await prisma.post.findUnique({ where: { id: Number(id) } })
   if (!post) return notFound()
 

@@ -19,8 +19,8 @@ export async function generateStaticParams() {
   return speakers.map((s: Speaker) => ({ id: s.id }));
 }
 
-export default async function SpeakerDetail({ params }: { params: Promise<Params> }) {
-  const { id } = await params;
+export default async function SpeakerDetail({ params }: { params: Params }) {
+  const { id } = params;
   const speaker = speakers.find(s => s.id === id);
   if (!speaker) {
     notFound();

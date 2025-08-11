@@ -14,8 +14,8 @@ export async function generateStaticParams() {
   return (events as Event[]).map((ev) => ({ id: ev.id }));
 }
 
-export default async function EventDetail({ params }: { params: Promise<Params> }) {
-  const { id } = await params;
+export default async function EventDetail({ params }: { params: Params }) {
+  const { id } = params;
   const event = (events as Event[]).find((ev) => ev.id === id);
   if (!event) {
     notFound();
