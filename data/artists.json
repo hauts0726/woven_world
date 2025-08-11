@@ -1,0 +1,639 @@
+[
+  {
+    "id": "noguchi-kirara",
+    "name": "野口 キララ",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_fill,g_north/v1754806149/%E9%87%8E%E5%8F%A3%E3%81%95%E3%82%93%E5%86%99%E7%9C%9F_m6rai9.jpg",
+    "shortBio": "学生。ファッションデザイナーとして活動し、持続可能な素材を用いた衣服を制作。",
+    "bio": [
+      "国際ファッション専門職大学在籍中にSustainable Fashion Design Award 2025・ウェア部門 大賞を受賞。伝統的な着物生地を再構築した独自のファッション表現で注目を集める。代表作「VIBRANT VEIL」では、多種多様な着物地をキルティングダウンジャケットに重ね合わせ、一着の中に複数の布の物語と色彩を包み込む新しい装いを提示。伝統美と現代感覚が交差するその創造は、「まとう」行為の可能性を大きく広げている。"
+    ],
+    "artworks": [
+      {
+        "id": "sustainable-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754806148/%E9%87%8E%E5%8F%A3%E3%81%95%E3%82%935_z8j1s0.jpg",
+        "description": ""
+      },
+      {
+        "id": "sustainable-2",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754806149/%E9%87%8E%E5%8F%A3%E3%81%95%E3%82%933_n0mouf.jpg",
+        "description": "環境に配慮したデザインと美しさを両立した作品"
+      },
+      {
+        "id": "sustainable-3",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754806148/%E9%87%8E%E5%8F%A3%E3%81%95%E3%82%932_vstvmd_fgzxux.jpg",
+        "description": "持続可能性を重視したファッションデザイン"
+      },
+      {
+        "id": "sustainable-4",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754806148/%E9%87%8E%E5%8F%A3%E3%81%95%E3%82%932_fhybtd.jpg",
+        "description": "美しさと環境配慮を両立させたファッション作品"
+      }
+    ]
+  },
+  {
+    "id": "kawano_chikayo",
+    "name": "河野 千佳世",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_fill,g_center/v1753945816/_MG_0129_boc1ys.jpg",
+    "shortBio": "和紙作家。伝統的な和紙の技法を現代的な表現に昇華させる作品を制作。",
+    "bio": [
+      "広報や企画推進の実務を経て2016年に独立。「人と社会をつなぐ関係性のデザイン」を軸に、アップサイクルや地域資源の活用に取り組む。代表作に、京都・和束町の廃棄茶葉と越前和紙を組み合わせたブランド「WE」がある。近年はおからを活用した和紙・和紙糸づくりも始動し、捨てられるはずだった素材に新たな価値と物語を吹き込んでいる。素材の背景にある人や風土を見つめ直し、次世代へ手渡す「未来のデザイン」を実践している。"
+    ],
+    "artworks": [
+      {
+        "id": "washi-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307839/%E6%B2%B3%E9%87%8E%E3%81%95%E3%82%931_qidlyn.jpg",
+        "description": "京都・和束町の廃棄茶葉と越前和紙を組み合わせた作品"
+      },
+      {
+        "id": "washi-2",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307837/APC_0584_hfbb3i.jpg",
+        "description": ""
+      },
+      {
+        "id": "washi-3",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307837/%E6%B2%B3%E9%87%8E%E3%81%95%E3%82%933_fux6gh.jpg",
+        "description": ""
+      },
+      {
+        "id": "washi-4",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307837/%E6%B2%B3%E9%87%8E%E3%81%95%E3%82%934_vplnpg.jpg",
+        "description": "次世代へ手渡す未来のデザインを体現した和紙作品"
+      }
+    ]
+  },
+  {
+    "id": "negishi_keisuke",
+    "name": "根岸 渓介",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754841262/%E6%A0%B9%E5%B2%B8-%E6%B8%93%E4%BB%8B-4x-%E3%82%A2%E3%83%83%E3%83%95%E3%82%9A%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB_tyzbbw.jpg",
+    "shortBio": "テキスタイルデザイナー。和紙の風合いを生かした生地を展示。",
+    "bio": [
+      "文化ファッション大学院大学卒。2022年 合同会社 Beast Barracks 設立。在学中よりフリーランスとして様々なアーティストへ衣装提供やグッズ開発を経験、法人設立後は日本各地の工場と提携しパリコレクション参加ブランドなどへテキスタイルの開発、提供を行う。"
+    ],
+    "artworks": [
+      {
+        "id": "textile-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754890394/%E6%A0%B9%E5%B2%B8%E3%81%95%E3%82%933_wfttgl.jpg",
+        "description": ""
+      },
+      {
+        "id": "textile-2",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307833/%E6%A0%B9%E5%B2%B8%E3%81%95%E3%82%931_jianvx.webp",
+        "description": ""
+      },
+      {
+        "id": "textile-3",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307833/%E6%A0%B9%E5%B2%B8%E3%81%8F%E3%82%932_prbr00.webp",
+        "description": ""
+      },
+      {
+        "id": "textile-4",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307870/%E6%A0%B9%E5%B2%B8%E3%81%95%E3%82%932_wayugw.png",
+        "description": "日本各地の工場と提携して開発した生地"
+      }
+    ]
+  },
+  {
+    "id": "okubo-mikiya",
+    "name": "大久保 みきや",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_fill,g_center/v1753697159/%E5%A4%A7%E4%B9%85%E4%BF%9D%E3%81%95%E3%82%93_vsmgmf.png",
+    "shortBio": "縫製職人。手仕事への想いを映像を通して伝える。",
+    "bio": [
+      "縫製工場を営む家庭に生まれ、幼少期からミシンの音や職人たちの手仕事に親しむ。服づくりが日常にある環境の中で育ち、自然と縫製の技術と向き合ってきた。現在は縫製職人として日々のものづくりに携わりながら、手をかけることの意味、一針一針に込められる想いを大切にしている。機械化や効率化が進む現代においても、「人の手」が担う微細な調整や感覚の重要性に光を当て、使い手の暮らしに寄り添う丁寧な仕事を続けている。"
+    ],
+    "artworks": [
+      {
+        "id": "sewing-3",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754565624/%E5%A4%A7%E4%B9%85%E4%BF%9D_ayvbbs.jpg",
+        "description": "使い手の暮らしに寄り添う丁寧な手仕事の作品"
+      },
+      {
+        "id": "sewing-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754564886/1up_%E5%A4%A7%E4%B9%85%E4%BF%9D%E3%81%95%E3%82%93_skvu2l.jpg",
+        "description": "一針一針に想いを込めた手縫いの衣装"
+      },
+      {
+        "id": "sewing-2",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754566485/%E5%A4%A7%E4%B9%85%E4%BF%9D%E3%81%95%E3%82%93_qtoqev.jpg",
+        "description": "伝統的な縫製技術を現代に継承する作品"
+      },
+      {
+        "id": "sewing-4",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754566206/IMG_20241222_123120895_HDR_rmrl6g.jpg",
+        "description": "縫製工場で培われた技術と記憶を込めた作品"
+      }
+    ]
+  },
+  {
+    "id": "hashida_toyo",
+    "name": "橋田 豊代",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_fill,g_center/v1753697280/%E6%A9%8B%E7%94%B0_%E8%B1%8A%E4%BB%A3_qlrjch.png",
+    "shortBio": "裂き織り作家。愛媛県佐田岬半島の伝統文化「裂き織り」の生地や作品を展示。",
+    "bio": [
+      "愛媛県佐田岬半島を拠点に活動する裂き織り作家。役目を終えた着物や古布にもう一度光を当てる裂き織りの技法に魅せられ、広島から移住。地域おこし協力隊として伝統の復興に取り組むかたわら、地域住民と共に裂き織りを学び合う「裂き織りラボ」を主宰し、暮らしと文化をつなぐ実践を重ねている。織りの中に記憶や時間の蓄積を感じ取るように、橋田さんの作品は布に宿る物語を丁寧に織り上げる。"
+    ],
+    "artworks": [
+      {
+        "id": "sakiori-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754309072/%E6%A9%8B%E7%94%B0%E3%81%95%E3%82%934_xwsqcy.png",
+        "description": "役目を終えた着物や古布を使った裂き織り作品"
+      },
+      {
+        "id": "sakiori-2",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754309072/%E6%A9%8B%E7%94%B0%E3%81%95%E3%82%933_am2fxk.png",
+        "description": "和紙糸と古布を組み合わせた革新的な裂き織り"
+      },
+      {
+        "id": "sakiori-3",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754309072/%E6%A9%8B%E7%94%B0%E3%81%95%E3%82%932_oqgujo.png",
+        "description": "佐田岬半島の伝統文化を現代に蘇らせた作品"
+      },
+      {
+        "id": "sakiori-4",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754309073/%E6%A9%8B%E7%94%B0%E3%81%95%E3%82%931_behrdu.png",
+        "description": "地域住民と共に学び合う裂き織りラボの作品"
+      }
+    ]
+  },
+  {
+    "id": "kamikawa-yuki",
+    "name": "神川 裕貴",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_fill,g_center/v1753795250/%E3%82%86%E3%81%8D%E3%81%95%E3%82%93_uvo5tv.jpg",
+    "shortBio": "会社員。染色を得意とし、色の重なりを衣服で表現。",
+    "bio": [
+      "伝統と現代の感性を架橋する衣服づくりを探究するファッションデザイナー。着物の構造や布の記憶に着目し、解体・再構築の手法を通じて「今を生きる装い」へと昇華させている。2025年には『ハレトケ』と題した着物アップサイクルの作品で「サステナブルファッションデザインアワード2025」東京都知事賞 優秀賞を受賞。古い布に刻まれた物語を感じ取りながら、新たな衣服として再生すること。その行為自体を「布を通じた対話」と捉え、持続可能性と感性を両立させた創作を続けている。"
+    ],
+    "artworks": [
+      {
+        "id": "dyeing-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754310244/%E7%A5%9E%E5%B7%9D%E3%81%95%E3%82%93_qflgfi.jpg",
+        "description": "染色技法による色の重なりを表現した衣服"
+      },
+      {
+        "id": "dyeing-2",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307838/%E7%A5%9E%E5%B7%9D%E3%81%95%E3%82%933_njcg6z.jpg",
+        "description": "東京都知事賞を受賞した着物アップサイクル作品"
+      },
+      {
+        "id": "dyeing-3",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307837/%E7%A5%9E%E5%B7%9D%E3%81%95%E3%82%932_gx1u4t.jpg",
+        "description": "古い布の物語を新たな衣服として再生した作品"
+      },
+      {
+        "id": "dyeing-4",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307837/%E7%A5%9E%E5%B7%9D%E3%81%95%E3%82%931_oy30eg.jpg",
+        "description": "伝統と現代の感性を架橋する衣服作品"
+      }
+    ]
+  },
+  {
+    "id": "kuramochi-michiyo",
+    "name": "倉持 三千世",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_fill,g_center/v1753795249/%E5%80%89%E6%8C%81%E3%81%95%E3%82%93_o6svvx.jpg",
+    "shortBio": "ファッションデザイナー。直線裁断の技法を用い、布と身体の関係性を探る衣服を展示。",
+    "bio": [
+      "ニューヨーク州立ファッション工科大学（FIT）でファッションを学び、国際的な感性と技術を磨いた後、古い着物や帯に再び命を吹き込むアパレルブランドを立ち上げる。かつて人々を美しく装わせ、長い眠りについていた布地を、ワンピースやレースアップコルセットとして再構築し、現代に蘇らせている。伝統と再解釈のあいだを往復しながら、素材が持つ時間と記憶を丁寧に紡ぎ、身体に寄り添う装いへと仕立てていく。"
+    ],
+    "artworks": [
+      {
+        "id": "straight-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307837/%E5%80%89%E6%8C%81%E3%81%95%E3%82%931_coo5bf.jpg",
+        "description": "直線裁断の技法を用いた着物リメイクワンピース"
+      },
+      {
+        "id": "straight-2",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307837/%E5%80%89%E6%8C%81%E3%81%95%E3%82%932_x3htgr.jpg",
+        "description": ""
+      },
+      {
+        "id": "straight-3",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307839/%E5%80%89%E6%8C%81%E3%81%95%E3%82%933_scf3xn.png",
+        "description": ""
+      },
+      {
+        "id": "straight-4",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307839/%E5%80%89%E6%8C%81%E3%81%95%E3%82%934_wefrhc.png",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "kenmochi_hiroshi",
+    "name": "釼持 博",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754825093/%E5%89%B1%E6%8C%81%E3%81%95%E3%82%93_lyepgr.jpg",
+    "shortBio": "和裁士。",
+    "bio": [
+      "東京・品川区を拠点に、60年以上にわたり着物の仕立てを担ってきた和裁士。大学卒業後、母が営んでいた和裁所に入り、厳しい修業の中で針と糸に向き合い、職人としての道を歩み始める。着物において最も重要とされる「柄合わせ」の技法に長けており、反物の模様や色の配置を一人ひとりの体型や所作にあわせてmillimeter単位で調整する熟練の手仕事は、多くの顧客から信頼を集めてきた。現在は、後進の育成にも力を注ぎ、子ども向けの運針体験や小物づくりのワークショップ、地域の伝統工芸保存活動など幅広く活動。着物文化を次代へ繋ぐ担い手として、和裁の精神と技術を静かに、力強く紡いでいる。"
+    ],
+    "artworks": [
+      {
+        "id": "wasai-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_pad,b_rgb:e5e5e5/v1/sample.jpg",
+        "description": ""
+      },
+      {
+        "id": "wasai-2",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_pad,b_rgb:e5e5e5/v1/sample.jpg",
+        "description": ""
+      },
+      {
+        "id": "wasai-3",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_pad,b_rgb:e5e5e5/v1/sample.jpg",
+        "description": ""
+      },
+      {
+        "id": "wasai-4",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_pad,b_rgb:e5e5e5/v1/sample.jpg",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "mari-suzuki",
+    "name": "Mari Suzuki",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_fill,g_center/v1753656907/Mari_Suzuki_jst7jb.jpg",
+    "shortBio": "テキスタイルデザイナー。国際的な視点から日本のテキスタイル文化を再解釈する作品を制作。",
+    "bio": [
+      "インテリアメーカー等でデザイナーをするかたわら、2014年より染色家 佐藤律子氏に師事し染色を学ぶ。 2020年テキスタイルブランド maison epiceを立ち上げ、染色作家としての活動をスタート。 心に響く『色』の世界を大切に、伝統技法の手染めに独自の手法を取り入れながら、今の暮らしに寄り添うプロダクトの制作を目指す。"
+    ],
+    "artworks": [
+      {
+        "id": "artwork-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754141888/12_s_rchhev.jpg",
+        "description": ""
+      },
+      {
+        "id": "artwork-2",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754141888/13s_npnd6r.jpg",
+        "description": ""
+      },
+      {
+        "id": "artwork-3",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754141888/27s_ddxypn.jpg",
+        "description": ""
+      },
+      {
+        "id": "artwork-4",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754141888/11s_qnukwp.jpg",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "suzuki_yuta",
+    "name": "鈴木 祐太",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754842425/%E9%88%B4%E6%9C%A8-%E7%A5%90%E5%A4%AA-2x-%E3%82%A2%E3%83%83%E3%83%95%E3%82%9A%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB_dmm8xa.jpg",
+    "shortBio": "会社員。地域の祖母世代から譲り受けた着物を縫い合わせたドレスを制作。",
+    "bio": [
+      "鈴木祐太は、会社員として働きながら、地域の祖母世代から譲り受けた着物を現代的なドレスに再構築する作家。世代を超えた記憶と技術の継承をテーマとした作品を制作している。"
+    ],
+    "artworks": [
+      {
+        "id": "kimono-dress-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754310416/%E9%88%B4%E6%9C%A81_tpdyha.jpg"
+      },
+      {
+        "id": "kimono-dress-2",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_pad,b_rgb:e5e5e5/v1/sample.jpg",
+        "description": ""
+      },
+      {
+        "id": "kimono-dress-3",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_pad,b_rgb:e5e5e5/v1/sample.jpg",
+        "description": ""
+      },
+      {
+        "id": "kimono-dress-4",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_pad,b_rgb:e5e5e5/v1/sample.jpg",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "tange_megumi",
+    "name": "丹下 めぐみ",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_fill,g_center/v1753656908/%E4%B8%B9%E4%B8%8B_%E3%82%81%E3%81%8F%E3%82%99%E3%81%BF_wdpbhj.jpg",
+    "shortBio": "管理栄養士・写真家。着物を普段着へリメイクした作品を展示。",
+    "bio": [
+      "食卓写真家、管理栄養士。大学で栄養学を学び、管理栄養士の資格を取得。飲食店勤務を経て、フリーランスのカメラマンとして独立。食品会社や飲食店のWebサイトなどを中心に撮影・取材を行う。食卓写真家として食品会社やカフェの撮影をするかたわら、食の体験型オンラインスクール「Harmo」の運営も手掛ける。2024年からは着物のリメイクにも取り組み、普段着として楽しめる衣服を制作している。"
+    ],
+    "artworks": [
+      {
+        "id": "remake-3",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307838/%E4%B8%B9%E3%82%81%E3%81%8F%E3%82%99%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3_mek7kf.jpg"
+      },
+      {
+        "id": "remake-4",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307838/%E4%B8%B9%E3%82%81%E3%81%8F%E3%82%99%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%EF%BC%92_yf4ozx.jpg",
+        "description": ""
+      },
+      {
+        "id": "remake-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307834/%E4%B8%B9%E3%82%81%E3%81%8F%E3%82%996_cogaf7.jpg",
+        "description": ""
+      },
+      {
+        "id": "remake-2",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307834/%E4%B8%B9%E3%82%81%E3%81%8F%E3%82%99%EF%BC%97_qrpchi.jpg",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "sumiya-yukiko",
+    "name": "炭屋 有希子",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_fill,g_center/v1753704166/%E7%82%AD%E5%B1%8B-%E6%9C%89%E5%B8%8C%E5%AD%90_up8fqp.jpg",
+    "shortBio": "パタンナー。アパレルパタンナー（型紙職人）として、ブランドの服づくりを縁の下で支える。",
+    "bio": [
+      "服飾専門学校卒業後、縫製工場勤務を経てフリーのパタンナーとなり、デザイナーのデザイン画をもとに精緻なパターン（型紙）を引く。立体的な服の構造を平面に起こす高度な技術で、多様な素材やシルエットに対応した型紙を作成。オーダーメイドの洋服制作も手がけ、お客様一人ひとりの体型に合わせた美しい仕立てに定評がある。表舞台に立たない職人だが、その巧みなパターンメイキングでファッションの創造を支えている。"
+    ],
+    "artworks": [
+      {
+        "id": "pattern-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754308082/%E7%82%AD%E5%B1%8B%E3%81%95%E3%82%934_efny4r.jpg",
+        "description": ""
+      },
+      {
+        "id": "pattern-2",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307836/%E7%82%AD%E5%B1%8B%E3%81%95%E3%82%931_pobfzz.jpg",
+        "description": ""
+      },
+      {
+        "id": "pattern-3",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307836/%E7%82%AD%E5%B1%8B%E3%81%95%E3%82%932_qbgzth.jpg",
+        "description": ""
+      },
+      {
+        "id": "pattern-4",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307836/%E7%82%AD%E5%B1%8B%E3%81%95%E3%82%933_rbkfaf.jpg",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "umida-halilova",
+    "name": "Umida Halilova",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_fill,g_center/v1754813367/Image_20250810_170707_708_mvslmd.jpg",
+    "shortBio": "会社員・モデル。布と色のレイヤー表現を軸に、日常の記憶をテキスタイルへと可視化する作品を制作。",
+    "bio": [
+      "会社員として働きながら、2024年より靴下作家としての活動を開始。各地を巡り、その土地ならではの素材や技法、人々の暮らしに触れながら、持続可能な靴下づくりの可能性を探求している。大量生産に頼らず、長く愛される一足を目指し、環境負荷の少ない素材選びや製造過程の工夫を重ねる。靴下を単なる日用品ではなく、地域文化や物語を編み込む小さなキャンバスとして捉え、新しい価値を紡ぎ出している。"
+    ],
+    "artworks": [
+      {
+        "id": "umida-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754813367/Image_20250810_170419_417_iuw9n6.png",
+        "description": ""
+      },
+      {
+        "id": "umida-2",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754813367/Image_20250810_170419_395_tthppy.png",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "koshida-rikuha",
+    "name": "越田 莉久羽",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_fill,g_center/v1753797773/%E8%B6%8A%E7%94%B0_o5yprn.png",
+    "shortBio": "学生。",
+    "bio": [
+      "染織や染色など日本古来の素材技法を学びつつ、現代的なデザイン感覚との融合を模索している。武蔵野美術大学にて学科奨励賞を受賞。未来のクラフトデザインの可能性を切り拓こうとしている。"
+    ],
+    "artworks": [
+      {
+        "id": "textile-student-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754308481/%E8%B6%8A%E7%94%B0%E3%81%95%E3%82%932_ixld54.jpg",
+        "description": ""
+      },
+      {
+        "id": "textile-student-2",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754308475/%E8%B6%8A%E7%94%B0%E3%81%95%E3%82%931_izqnjz.jpg",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "kawamata-ryuto",
+    "name": "川又 龍人",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_fill,g_center/v1753657940/%E5%B7%9D%E5%8F%88_%E9%BE%8D%E4%BA%BA_of6kou.png",
+    "shortBio": "スペキュラティブデザイナー。細胞培養技術を用いて「世界初の細胞アクセサリー」や細胞由来の香水を開発。",
+    "bio": [
+      "1991年北海道札幌市生まれ。IAMAS（情報科学芸術大学院大学）修了後、AI系ベンチャーを経て2023年に株式会社PxCellを設立し代表取締役に就任。細胞培養技術を用いて「世界初の細胞アクセサリー」や細胞由来の香水を開発するスペキュラティブデザイナーとして注目を集める。生物学とデザイン、ファッションを横断し、「大切な誰かの細胞を身に纏う」というコンセプトを具現化したプロダクトを提案。バイオテクノロジーがもたらす未来のライフスタイルを問いかけている。"
+    ],
+    "artworks": [
+      {
+        "id": "cell-accessory-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754308526/%E5%B7%9D%E5%8F%880_hw60y9.webp",
+        "description": ""
+      },
+      {
+        "id": "cell-perfume-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307879/%E5%B7%9D%E5%8F%884_pp3iop.png",
+        "description": ""
+      },
+      {
+        "id": "bio-fashion-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307834/%E5%B7%9D%E5%8F%88%E3%81%95%E3%82%932_s23rhe.webp",
+        "description": ""
+      },
+      {
+        "id": "future-lifestyle-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307833/%E5%B7%9D%E5%8F%88%E3%81%95%E3%82%933_yrloyf.webp",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "tadokoro-naoki",
+    "name": "田所 直樹",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_fill,g_center/v1753656902/%E7%94%B0%E6%89%80_%E7%9B%B4%E6%A8%B9_rej72f.jpg",
+    "shortBio": "研究者。大学院では再生医療分野で心臓組織の3Dプリント研究に従事。",
+    "bio": [
+      "大学院では再生医療分野で心臓組織の3Dプリント研究に従事。卒業後、大手化粧品メーカーの研究職に就く一方、週末はバイオアート団体「Shojinmeat」で培養肉の研究開発に参加。培養細胞で幻の「人魚の肉」や「龍の肉」を再現する異色のアートプロジェクトでは、最高科学責任者として科学面を指揮。科学者の視点とクリエイターの発想を融合させ、生命科学の新たな可能性を社会に提示する研究者として活躍している。"
+    ],
+    "artworks": [
+      {
+        "id": "3d-heart-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754308526/%E5%B7%9D%E5%8F%880_hw60y9.webp",
+        "description": "再生医療分野での心臓組織3Dプリント研究成果"
+      },
+      {
+        "id": "cultured-meat-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307833/%E7%94%B0%E6%89%80%E3%81%95%E3%82%932_wqiagu.jpg",
+        "description": "培養細胞で再現した幻の「人魚の肉」「龍の肉」"
+      },
+      {
+        "id": "bio-art-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307869/%E7%94%B0%E6%89%80%E3%81%95%E3%82%931_egdk1m.png",
+        "description": "科学者の視点とクリエイターの発想を融合したバイオアート"
+      },
+      {
+        "id": "life-science-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307871/%E7%94%B0%E6%89%80%E3%81%95%E3%82%932_xzlvng.png",
+        "description": "生命科学の新たな可能性を社会に提示する研究作品"
+      }
+    ]
+  },
+  {
+    "id": "terashima-kyosui",
+    "name": "寺島 響水",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_fill,g_center/v1753656900/%E5%AF%BA%E5%B3%B6_%E9%9F%BF%E6%B0%B4_ligguh.jpg",
+    "shortBio": "書道家。1982年生まれ。書家であった祖母・渡辺水怜の影響で幼少より書に親しむ。",
+    "bio": [
+      "1982年生まれ。書家であった祖母・渡辺水怜の影響で幼少より書に親しむ。2010年より書家としての創作活動を本格開始。篆書体など古代文字の造形美を取り入れつつ、現代的な感性で書の表現を追求する。企業ロゴの揮毫や個展開催など幅広く活躍し、伝統的な筆致に新風を吹き込む作品を多数発表。墨の濃淡や余白に宿る美を大切に、「書く」ことの本質を問い続ける日々を送っている。"
+    ],
+    "artworks": [
+      {
+        "id": "calligraphy-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754308476/%E5%AF%BA%E5%B3%B6%E3%81%95%E3%82%931_uq9rux.png",
+        "description": "古代文字の造形美を取り入れた現代的な書作品"
+      },
+      {
+        "id": "calligraphy-2",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754308477/%E5%AF%BA%E5%B3%B6%E3%81%95%E3%82%932_xtei9h.png",
+        "description": "伝統的な筆致で制作した企業ロゴの揮毫作品"
+      }
+    ]
+  },
+  {
+    "id": "imai-saki",
+    "name": "今井 咲希",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_600,h_600,c_fill,g_center,q_100,f_auto,dpr_2.0/v1753656903/%E4%BB%8A%E4%BA%95_%E5%92%B2%E5%B8%8C_l2n3mp.jpg",
+    "shortBio": "路上書房作家。誰もが参加できる本づくりの場「路上書房」を主宰。",
+    "bio": [
+      "「路上書房」を主宰する作家。「本の最小単位＝1枚の物語」というユニークな発想のもと、書き手・読み手・編集者が境界なく関わる、ひらかれた出版のかたちを実践している。書くことが苦手な人も、読む・感じる・編むことで関われる、誰もが参加できる本づくりを目指し、全国各地でブックリーフを集めて一冊の本として編集・構成する活動を展開。将来的には「編む会」として参加者とともに本づくりを行う構想も持つ。"
+    ],
+    "streetLibrary": {
+      "concept": "「本の最小単位＝1枚の物語」というユニークな発想のもと、書き手・読み手・編集者が境界なく関わる、ひらかれた出版のかたちを実践。書くことが苦手な人も、読む・感じる・編むことで関われる、誰もが参加できる本づくりを目指している。",
+      "images": [
+        {
+          "url": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754227434/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2025-08-03_22.20.50_mmwdrx.png",
+          "title": "",
+          "description": "誰もが参加できる本づくりの場「路上書房」の設営風景"
+        },
+        {
+          "url": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754227421/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2025-08-03_22.21.31_hkujj8.png",
+          "title": "",
+          "description": "1枚の物語を綴るブックリーフの制作過程"
+        },
+        {
+          "url": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754227380/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2025-08-03_22.21.14_ivyfas.png",
+          "title": "",
+          "description": "集まった無名の物語を読み、見知らぬ誰かと本の中で出会う体験"
+        },
+        {
+          "url": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754227349/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2025-08-03_22.19.44_fbtydg.png",
+          "title": "",
+          "description": "全国各地で集められたブックリーフを一冊の本として編集・構成する過程"
+        }
+      ],
+      "mechanism": {
+        "write": "ブックリーフに自分の物語を綴る。悲しかったこと、嬉しかったこと、誰かに聞いてほしい日常の想いなど、小さな一片の物語を紙（ブックリーフ）に自由に書くことができます。",
+        "read": "他の人の物語を味わう。集まった無名の物語を読み、見知らぬ誰かと本の中ですれ違うような体験を楽しめます。",
+        "weave": "集まった物語をひとつの本にする。全国各地で集められたブックリーフを回収し、一冊の本のように編集・構成してまとめていきます。将来的には「編む会」として参加者とともに本づくりを行う構想もあります。"
+      },
+      "features": [
+        "「本の最小単位＝1枚の物語」というユニークな発想",
+        "書き手・読み手・編集者が境界なく関わる、ひらかれた出版のかたち",
+        "書くことが苦手な人も、読む・感じる・編むことで関われる、誰もが参加できる本づくり"
+      ],
+      "message": "あなたの物語は、それだけでひとつの本になるかもしれない。どこからでも、誰でも、本づくりに加われる。そんな場所が「路上書房」です。"
+    }
+  },
+  {
+    "id": "okimoto-kei",
+    "name": "沖本 啓",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_fill,g_center/v1753656949/%E6%B2%96%E6%9C%AC_%E5%95%93_sslxlu.png",
+    "shortBio": "革職人。環境と倫理に配慮した革素材を用い、暮らしに寄り添う作品を制作。",
+    "bio": [
+      "革職人として環境と倫理に配慮した革素材を用い、暮らしに寄り添う作品を制作している。持続可能な素材選びと伝統的な革工芸技術を組み合わせ、現代のライフスタイルに適した革製品を手がける。環境負荷を最小限に抑えながら、長く愛用できる品質の高い革製品づくりに取り組んでいる。"
+    ],
+    "artworks": [
+      {
+        "id": "leather-1",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307870/%E3%83%9B%E3%82%99%E3%82%B96_sueibk.png",
+        "description": "環境と倫理に配慮した革素材を用いた革製品"
+      },
+      {
+        "id": "leather-2",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307872/%E3%83%9B%E3%82%99%E3%82%B94_sgz0rc.png",
+        "description": "持続可能な素材選びと伝統技術を組み合わせた革工芸"
+      },
+      {
+        "id": "leather-3",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307870/%E3%83%9B%E3%82%99%E3%82%B95_nrtrso.png",
+        "description": "現代のライフスタイルに適した革製品"
+      },
+      {
+        "id": "leather-4",
+        "title": "",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307870/%E3%83%9B%E3%82%99%E3%82%B93_irodsb.png",
+        "description": "環境負荷を最小限に抑えた高品質な革製品"
+      }
+    ]
+  }
+]
