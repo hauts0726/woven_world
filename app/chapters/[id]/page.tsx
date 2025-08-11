@@ -19,8 +19,8 @@ export async function generateStaticParams() {
   return chapters.map((ch: Chapter) => ({ id: ch.id.toString() }));
 }
 
-export default async function ChapterDetail({ params }: { params: Params }) {
-  const { id } = params;
+export default async function ChapterDetail({ params }: { params: Promise<Params> }) {
+  const { id } = await params;
   const chapterId = parseInt(id, 10);
   const chapter = chapters.find(ch => ch.id === chapterId);
   if (!chapter) {
