@@ -8,26 +8,47 @@ const nextConfig = {
 
   // 画像ドメイン設定（必要であれば拡張）
   images: {
-    domains: ['images.unsplash.com', 'cdn.example.com','enzostvs-deepsite.hf.space','huggingface.co','res.cloudinary.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.example.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'enzostvs-deepsite.hf.space',
+      },
+      {
+        protocol: 'https',
+        hostname: 'huggingface.co',
+      },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+      },
+    ],
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384, 512, 768, 1024],
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
+    contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
-  // i18n 言語設定（不要なら削除可）
-  i18n: {
-    locales: ['en'],
-    defaultLocale: 'en'
+  // フォント最適化設定
+  optimizeFonts: true,
+
+  // ビルド時のタイムアウト設定
+  staticPageGenerationTimeout: 120,
+
+  // エクスペリメンタル設定
+  experimental: {
+    optimizePackageImports: ['@next/font'],
   },
-
-
-  // エクスペリメンタル設定（Next.js 13 App Router 使用時など）
-  // experimental: {
-  //   appDir: true  // Next.js 13.4+ では不要
-  // }
 };
 
 module.exports = nextConfig;

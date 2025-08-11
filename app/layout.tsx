@@ -4,20 +4,12 @@ import SimpleNavigation from '@/components/SimpleNavigation';
 import Footer from '@/components/Footer';
 import SimpleTopButton from '@/components/SimpleTopButton';
 import ChapterSummary from '@/components/ChapterSummary';
-import { Noto_Serif_JP } from 'next/font/google';
-import { Zen_Kaku_Gothic_New } from 'next/font/google';
+import { Inter } from 'next/font/google';
 
-const notoSerif = Noto_Serif_JP({
+const inter = Inter({
   subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-noto-serif',
-  display: 'swap',
-});
-
-const zenGothic = Zen_Kaku_Gothic_New({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-zen-gothic',
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-inter',
   display: 'swap',
 });
 
@@ -36,7 +28,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`bg-white text-gray-900 ${notoSerif.variable} ${zenGothic.variable} font-serif`}
+        className={`bg-white text-gray-900 ${inter.variable} font-sans`}
       >
         <SimpleNavigation />
         <ChapterSummary />

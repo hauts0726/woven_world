@@ -8,8 +8,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Zen Kaku Gothic New"', 'sans-serif'],
-        serif: ['"Noto Serif JP"', 'serif']
+        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        serif: ['Georgia', 'serif']
       },
       screens: {
         'xs': '475px',
