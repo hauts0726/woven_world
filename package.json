@@ -2,11 +2,15 @@
   "name": "weaving-worlds",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=18.0.0 <21.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^6.13.0",
@@ -18,9 +22,9 @@
     "resend": "^0.17.1"
   },
   "devDependencies": {
-    "@types/node": "^24.1.0",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
+    "@types/node": "^18.19.0",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
     "autoprefixer": "^10.4.21",
     "eslint": "^8.45.0",
     "eslint-config-next": "13.4.13",
