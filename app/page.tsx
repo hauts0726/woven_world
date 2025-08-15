@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 import chapters from '@/data/chapters.json';
 import artists from '@/data/artists.json';
 import speakers from '@/data/speakers.json';
@@ -12,6 +13,7 @@ import EventCard from '@/components/EventCard';
 import ChapterAutoScroll from '@/components/ChapterAutoScroll';
 import SimpleNavButtons from '@/components/SimpleNavButtons';
 import ArtistCarousel from '@/components/ArtistCarousel';
+import OptimizedVideo from '@/components/OptimizedVideo';
 import { Chapter, Artist, Speaker, Event } from '@/types';
 
 export default function HomePage() {
@@ -22,20 +24,16 @@ export default function HomePage() {
     <div className="w-full home-page">
       {/* Hero Section with Video Background */}
       <section id="top" className="hero-section relative mb-8 sm:mb-12 lg:mb-16 h-screen overflow-hidden">
-        {/* Background video */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
+        {/* Background video with optimizations */}
+        <OptimizedVideo
+          src="https://res.cloudinary.com/dfsg7aahv/video/upload/v1755211146/%E6%9C%AC%E7%95%AA%E7%94%A82_axlrvu.mov"
+          poster="https://res.cloudinary.com/dfsg7aahv/image/upload/f_auto,q_auto:good,w_2560/v1754341740/%E6%9C%80%E6%96%B0_un9hqv.jpg"
           className="hero-video"
-        >
-          <source
-            src="https://res.cloudinary.com/dfsg7aahv/video/upload/v1754341624/%E6%9C%80%E6%96%B0_idgldl.mov"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
+          autoPlay={true}
+          loop={true}
+          muted={true}
+          playsInline={true}
+        />
 
         {/* Overlay and Text */}
         <div className="absolute inset-0 bg-white bg-opacity-80 flex items-center justify-center z-10 px-4 sm:px-6 lg:px-8">
@@ -43,7 +41,7 @@ export default function HomePage() {
             <h1 className="text-responsive-4xl sm:text-responsive-5xl font-sans font-bold mb-4 sm:mb-6 lg:mb-8 text-gray-700 japanese-text leading-tight break-words">
               衣服とわたしたちのこれから
             </h1>
-            <p className="text-responsive-lg sm:text-responsive-xl text-gray-700 mb-3 sm:mb-4 japanese-text leading-relaxed break-words">– わたしたちは、なにをまとい、なにを未来へ残すのか –</p>
+            <p className="text-responsive-xl sm:text-responsive-4xl text-gray-700 mb-3 sm:mb-4 japanese-text leading-relaxed break-words">– 衣服が社会を映す「鏡」だとしたら、わたしたちの服装から何が映って見えるのか –</p>
             <p className="text-responsive-base sm:text-responsive-lg text-gray-600 italic break-words">
               On view April 22 – June 21, 2026— BUG, Tokyo, Japan
             </p>
@@ -55,58 +53,58 @@ export default function HomePage() {
       {/* Intro Text - Minimal & Beautiful Design */}
       <section id="intro" className="min-h-screen flex flex-col justify-center mb-12 sm:mb-16 lg:mb-24 px-4 sm:px-6 lg:px-8 w-full mx-auto relative container-responsive">
         {/* Section Header with Subtle Accent */}
-        <div className="text-center mb-4 mt-12 sm:mt-16 lg:mt-20">
+        <div className="text-center mb-8 mt-12 sm:mt-16 lg:mt-20">
           <div className="inline-block relative">
-            <h2 className="text-responsive-xl sm:text-responsive-2xl font-light tracking-wide mb-2 text-gray-800 japanese-text break-words">
+            <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light tracking-wide mb-2 text-gray-800 japanese-text whitespace-nowrap">
               はじめに
-            </h2>
+            </div>
           </div>
         </div>
 
         {/* Main Content with Enhanced Typography */}
         <div className="flex justify-center w-full">
-          <div className="prose prose-lg max-w-7xl w-full">
+          <div className="prose prose-lg max-w-4xl w-full mx-auto">
             <div className="space-y-6 sm:space-y-8 lg:space-y-10 text-gray-700 leading-loose japanese-text">
               {/* First paragraph with emphasis */}
-              <p className="text-responsive-lg sm:text-responsive-xl font-light leading-relaxed text-gray-600 mb-6 sm:mb-8 text-center italic break-words">
-                わたしたちは、なにをまとい、なにを未来へ残すのか。
+              <p 
+                className="font-bold leading-relaxed text-gray-600 mb-6 sm:mb-8 text-center japanese-text whitespace-nowrap"
+                style={{
+                  fontSize: 'clamp(3rem, 12vw, 6rem)',
+                  lineHeight: '1.2'
+                }}
+              >
+                衣服が社会を映す「鏡」だとしたら、わたしたちの服装から何が映って見えるのか
               </p>
 
               {/* Main content paragraphs */}
               <div className="mt-8 sm:mt-10 lg:mt-12 space-y-4 sm:space-y-5 lg:space-y-6 text-responsive-base sm:text-responsive-lg leading-loose">
-                <p className="text-left mt-2 break-words">
-                  本来なら捨てられるはずだった着物を見つめながら、「この着物を、もっと生かす方法はないだろうか」。
+                <p className="text-left mb-2 whitespace-nowrap">本来なら捨てられるはずだった一着の着物を前に、「この着物を、もっと生かす方法はないだろうか」。</p>
+
+                <p className="text-left mb-2 whitespace-nowrap">
+                  地域創生に取り組む友人がそうつぶやいたことから、この企画は生まれました。
                 </p>
 
-                <p className="text-left mb-2 break-words">
-                  愛知県豊田市で地域創生に取り組む友人が、そう私につぶやいたことがキッカケとなり、この企画が生まれました。
+                <p className="text-center mb-2 whitespace-nowrap">
+                  かつて衣服は、直し、譲り、受け継ぎながら、大切にされ、作り手の思いや手間、暮らしの記憶が静かに息づいていました。
                 </p>
 
-                <p className="text-left mb-2 break-words">
-                  かつて衣服は、直し、譲り、受け継ぎながら大切にされてきましたが、その記憶や背景は静かに埋もれつつあります。
-                </p>
-
-                <p className="text-left mb-2 pb-4 sm:pb-6 break-words">
-                  「まとう」という行為も、自己表現や社会とのつながりという意味を、どこかで手放しつつあるのではないでしょうか。
+                <p className="text-center mb-2 pb-4 sm:pb-6 whitespace-nowrap">
+                  しかし、その文化や価値観は少しずつ埋もれ、「まとう」という行為も、その温もりを手放しつつあるのかもしれません。
                 </p>
                 
 
-                <p className="text-left mb-2 break-words">
-                  本展は、素材との出会いから未来の装いをたどり、
+                <p className="text-left mb-2 whitespace-nowrap">
+                  本展では、素材との出会いから未来の装いまでをたどり、衣服に込められた物語や社会との関わりを見つめ直します。
                 </p>
 
-                <p className="text-left mb-2 break-words">
-                  来場者との対話の場を作るだけでなく、様々な視点から掘り下げるトークイベントやワークショップを全5回開催。
-                </p>
-
-                <p className="text-left mb-2 break-words">
-                  裂き織りやバイオ技術、AIなど、多様な手法を用いた作家20名とゲスト８名を迎え、各章に呼応する形で紹介します。
+                <p className="text-center mb-2 whitespace-nowrap">
+                  裂き織りやバイオ技術、AIなど、多彩な手法の作家20名とゲスト8名が参加し、全6章に呼応したイベントも開催します。
                 </p>
 
                 {/* Closing statement with special styling */}
                 <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 relative pb-4 sm:pb-6">
-                  <p className="text-left text-responsive-base sm:text-responsive-lg leading-loose text-gray-600 mb-6 sm:mb-8 japanese-text break-words">
-                    衣服にまつわる記憶や素材、社会との関係に目を向け、まとうことの意味や広がりを考える機会となれば幸いです。
+                  <p className="text-center text-responsive-base sm:text-responsive-lg leading-loose text-gray-600 mb-6 sm:mb-8 japanese-text whitespace-nowrap">
+                  会場での出会いや対話を通じて、「まとうこと」の意味や広がりを、未来に向けて感じ取ってもらえたら嬉しいです。
                   </p>
                   
                   {/* 企画者クレジット - 右下に配置（レスポンシブ対応） */}
@@ -125,6 +123,14 @@ export default function HomePage() {
 
       {/* Chapters Section */}
       <section id="chapters" className="w-full">
+        {/* 各章の紹介見出しを追加 */}
+        <div className="bg-gray-100 py-4 mb-1 sm:mb-1 lg:mb-1">
+          <div className="text-center px-4 sm:px-6 lg:px-1">
+            <div className="`text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light tracking-wide mb-2 text-gray-800 japanese-text whitespace-nowrap">
+              各章の紹介
+            </div>
+          </div>
+        </div>
         <div className="scroll-smooth">
           {(chapters as Chapter[]).map((chapter, index) => {
             // 各章の作家を取得
@@ -135,8 +141,8 @@ export default function HomePage() {
             return (
               <div key={chapter.id} id={`chapter-${chapter.id}`} className="min-h-screen flex flex-col justify-center" data-chapter-id={chapter.id}>
                 <ChapterAutoScroll chapterId={chapter.id}>
-                  <div className="w-full max-w-screen-2xl text-center px-4 sm:px-6 lg:px-8 mx-auto py-4">
-                    <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-sans font-bold mb-4 text-gray-800 japanese-text">
+                  <div className="w-full max-w-screen-2xl text-center px-4 sm:px-6 lg:px-8 mx-auto">
+                    <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-sans font-light mb-4 text-gray-800 japanese-text">
                       {chapter.title}
                     </h3>
                     
@@ -204,10 +210,12 @@ export default function HomePage() {
                               <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 bg-white transform ]">
                                 {/* 作品画像 */}
                                 <div className="h-[300px] md:h-[400px] lg:h-[500px] relative overflow-hidden">
-                                  <img 
-                                    src="https://res.cloudinary.com/dfsg7aahv/image/upload/v1754227434/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2025-08-03_22.20.50_mmwdrx.png"
+                                  <Image 
+                                    src="https://res.cloudinary.com/dfsg7aahv/image/upload/v1755212125/c2a143a8-433a-40b1-8d59-ea1fe6ed8e48_ngkywv.jpg"
                                     alt="路上書房の設営風景"
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                                   />
                                   {/* グラデーションオーバーレイ */}
                                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
@@ -227,9 +235,9 @@ export default function HomePage() {
                                   
                                   <div className="relative flex items-end space-x-4">
                                     {/* 顔写真エリア - 左下に配置 */}
-                                    <div className="w-16 h-16 rounded-xl overflow-hidden border-2 border-white/80 shadow-lg backdrop-blur-sm flex-shrink-0 mb-1">
+                                    <div className="w-24 h-24 rounded-xl overflow-hidden border-2 border-white/80 shadow-lg backdrop-blur-sm flex-shrink-0 mb-1">
                                       <img 
-                                        src="https://res.cloudinary.com/dfsg7aahv/image/upload/v1753656903/%E4%BB%8A%E4%BA%95_%E5%92%B2%E5%B8%8C_l2n3mp.jpg"
+                                        src="https://res.cloudinary.com/dfsg7aahv/image/upload//w_300,h_300,c_fill,g_center/v1755058312/%E4%BB%8A%E4%BA%95%E3%81%95%E3%82%93_vfifeg.jpg"
                                         alt="今井 咲希"
                                         className="w-full h-full object-cover"
                                       />

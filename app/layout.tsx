@@ -4,6 +4,7 @@ import SimpleNavigation from '@/components/SimpleNavigation';
 import Footer from '@/components/Footer';
 import SimpleTopButton from '@/components/SimpleTopButton';
 import ChapterSummary from '@/components/ChapterSummary';
+import PageTransition from '@/components/PageTransition';
 import { Inter, Shippori_Mincho } from 'next/font/google';
 
 const inter = Inter({
@@ -37,11 +38,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body
         className={`bg-white text-gray-900 ${inter.variable} ${shipporiMincho.variable}`}
       >
-        <SimpleNavigation />
-        <ChapterSummary />
-        <main className="w-full [&:has(.events-page)]:pt-0 [&:has(.events-page)]:pb-0 [&:has(.event-detail)]:pb-0 [&:has(.home-page)]:pt-0">{children}</main>
-        <Footer />
-        <SimpleTopButton />
+        <PageTransition>
+          <SimpleNavigation />
+          <ChapterSummary />
+          <main className="w-full [&:has(.events-page)]:pt-0 [&:has(.events-page)]:pb-0 [&:has(.event-detail)]:pb-0 [&:has(.home-page)]:pt-0">{children}</main>
+          <Footer />
+          <SimpleTopButton />
+        </PageTransition>
       </body>
     </html>
   );

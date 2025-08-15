@@ -256,25 +256,25 @@
       {
         "id": "wasai-1",
         "title": "",
-        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_pad,b_rgb:e5e5e5/v1/sample.jpg",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_fill,g_center,b_rgb:f5f5f5/v1754307837/%E6%B2%B3%E9%87%8E%E3%81%95%E3%82%933_fux6gh.jpg",
         "description": ""
       },
       {
         "id": "wasai-2",
         "title": "",
-        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_pad,b_rgb:e5e5e5/v1/sample.jpg",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_fill,g_center,b_rgb:f5f5f5/v1754307837/%E6%B2%B3%E9%87%8E%E3%81%95%E3%82%934_vplnpg.jpg",
         "description": ""
       },
       {
         "id": "wasai-3",
         "title": "",
-        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_pad,b_rgb:e5e5e5/v1/sample.jpg",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_fill,g_center,b_rgb:f5f5f5/v1754307839/%E6%B2%B3%E9%87%8E%E3%81%95%E3%82%931_qidlyn.jpg",
         "description": ""
       },
       {
         "id": "wasai-4",
         "title": "",
-        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_pad,b_rgb:e5e5e5/v1/sample.jpg",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_fill,g_center,b_rgb:f5f5f5/v1754307837/APC_0584_hfbb3i.jpg",
         "description": ""
       }
     ]
@@ -331,19 +331,19 @@
       {
         "id": "kimono-dress-2",
         "title": "",
-        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_pad,b_rgb:e5e5e5/v1/sample.jpg",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754310416/%E9%88%B4%E6%9C%A82_ixqhqz.jpg",
         "description": ""
       },
       {
         "id": "kimono-dress-3",
         "title": "",
-        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_pad,b_rgb:e5e5e5/v1/sample.jpg",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754310416/%E9%88%B4%E6%9C%A83_ixqhqz.jpg",
         "description": ""
       },
       {
         "id": "kimono-dress-4",
         "title": "",
-        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_300,h_300,c_pad,b_rgb:e5e5e5/v1/sample.jpg",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754310416/%E9%88%B4%E6%9C%A84_ixqhqz.jpg",
         "description": ""
       }
     ]
@@ -371,7 +371,7 @@
       {
         "id": "remake-1",
         "title": "",
-        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754307834/%E4%B8%B9%E3%82%81%E3%81%8F%E3%82%996_cogaf7.jpg",
+        "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754990896/LINE_ALBUM_%E5%88%B6%E4%BD%9C%E9%81%8E%E7%A8%8B_250812_1_hbpsro.jpg",
         "description": ""
       },
       {
@@ -559,7 +559,7 @@
   {
     "id": "imai-saki",
     "name": "今井 咲希",
-    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload/w_600,h_600,c_fill,g_center,q_100,f_auto,dpr_2.0/v1753656903/%E4%BB%8A%E4%BA%95_%E5%92%B2%E5%B8%8C_l2n3mp.jpg",
+    "image": "https://res.cloudinary.com/dfsg7aahv/image/upload//w_300,h_300,c_fill,g_center/v1755058039/%E4%BB%8A%E4%BA%95%E3%81%95%E3%82%93_caid7e.jpg",
     "shortBio": "路上書房作家。誰もが参加できる本づくりの場「路上書房」を主宰。",
     "bio": [
       "「路上書房」を主宰する作家。「本の最小単位＝1枚の物語」というユニークな発想のもと、書き手・読み手・編集者が境界なく関わる、ひらかれた出版のかたちを実践している。書くことが苦手な人も、読む・感じる・編むことで関われる、誰もが参加できる本づくりを目指し、全国各地でブックリーフを集めて一冊の本として編集・構成する活動を展開。将来的には「編む会」として参加者とともに本づくりを行う構想も持つ。"
@@ -568,25 +568,27 @@
       "concept": "「本の最小単位＝1枚の物語」というユニークな発想のもと、書き手・読み手・編集者が境界なく関わる、ひらかれた出版のかたちを実践。書くことが苦手な人も、読む・感じる・編むことで関われる、誰もが参加できる本づくりを目指している。",
       "images": [
         {
-          "url": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754227434/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2025-08-03_22.20.50_mmwdrx.png",
+          "url": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1755214691/db4895b2-2725-4fe0-a8a4-8ff8453964a9_snqv0h.jpg",
           "title": "",
           "description": "誰もが参加できる本づくりの場「路上書房」の設営風景"
+        },
+                {
+          "url": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1755214471/ef695646-b75e-45ee-b095-1603b7528bfb_ecwnos.jpg",
+          "title": "",
+          "description": "集まった無名の物語を読み、見知らぬ誰かと本の中で出会う体験"
+        },        
+        {
+          "url": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1755214489/e73bbf2d-03b1-4d7b-89b6-efde6f8b61dc_upmjsr.jpg",
+          "title": "",
+          "description": "全国各地で集められたブックリーフを一冊の本として編集・構成する過程"
         },
         {
           "url": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754227421/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2025-08-03_22.21.31_hkujj8.png",
           "title": "",
           "description": "1枚の物語を綴るブックリーフの制作過程"
-        },
-        {
-          "url": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754227380/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2025-08-03_22.21.14_ivyfas.png",
-          "title": "",
-          "description": "集まった無名の物語を読み、見知らぬ誰かと本の中で出会う体験"
-        },
-        {
-          "url": "https://res.cloudinary.com/dfsg7aahv/image/upload/v1754227349/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2025-08-03_22.19.44_fbtydg.png",
-          "title": "",
-          "description": "全国各地で集められたブックリーフを一冊の本として編集・構成する過程"
         }
+
+
       ],
       "mechanism": {
         "write": "ブックリーフに自分の物語を綴る。悲しかったこと、嬉しかったこと、誰かに聞いてほしい日常の想いなど、小さな一片の物語を紙（ブックリーフ）に自由に書くことができます。",

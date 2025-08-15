@@ -695,6 +695,10 @@ p {
   top: 5rem;
 }
 
+.top-4{
+  top: 1rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -1154,6 +1158,12 @@ p {
   list-style-type: disc;
 }
 
+.appearance-none{
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -1521,6 +1531,11 @@ p {
   background-color: rgb(255 255 255 / 0.9);
 }
 
+.bg-blue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+}
+
 .bg-opacity-0{
   --tw-bg-opacity: 0;
 }
@@ -1881,6 +1896,55 @@ p {
   line-height: 1rem;
 }
 
+.text-responsive-2xl{
+  font-size: clamp(1.62rem, 4.3vw, 2.03rem);
+}
+
+.text-responsive-3xl{
+  font-size: clamp(2.03rem, 5.4vw, 2.43rem);
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-\[8rem\]{
+  font-size: 8rem;
+}
+
+.text-\[12rem\]{
+  font-size: 12rem;
+}
+
+.text-\[18rem\]{
+  font-size: 18rem;
+}
+
+.text-\[22rem\]{
+  font-size: 22rem;
+}
+
+.text-\[14rem\]{
+  font-size: 14rem;
+}
+
+.text-\[10rem\]{
+  font-size: 10rem;
+}
+
+.text-\[5rem\]{
+  font-size: 5rem;
+}
+
+.text-\[2rem\]{
+  font-size: 2rem;
+}
+
+.text-\[1rem\]{
+  font-size: 1rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -2000,6 +2064,10 @@ p {
 
 .text-white\/90{
   color: rgb(255 255 255 / 0.9);
+}
+
+.text-\[1\FF18rem\]{
+  color: 1８rem;
 }
 
 .underline{
@@ -3467,6 +3535,11 @@ p {
   background-color: rgb(254 249 195 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-gray-200:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:from-blue-600:hover{
   --tw-gradient-from: #2563eb var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(37 99 235 / 0) var(--tw-gradient-to-position);
@@ -3706,6 +3779,10 @@ p {
     margin-top: 1.5rem;
   }
 
+  .sm\:mb-1{
+    margin-bottom: 0.25rem;
+  }
+
   .sm\:inline{
     display: inline;
   }
@@ -3844,6 +3921,11 @@ p {
     padding-bottom: 2rem;
   }
 
+  .sm\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
   .sm\:pb-6{
     padding-bottom: 1.5rem;
   }
@@ -3909,6 +3991,48 @@ p {
   .sm\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-responsive-4xl{
+    font-size: clamp(2.43rem, 6.5vw, 3.24rem);
+  }
+
+  .sm\:text-7xl{
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .sm\:text-\[10rem\]{
+    font-size: 10rem;
+  }
+
+  .sm\:text-responsive-3xl{
+    font-size: clamp(2.03rem, 5.4vw, 2.43rem);
+  }
+
+  .sm\:text-\[14rem\]{
+    font-size: 14rem;
+  }
+
+  .sm\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .sm\:text-\[5rem\]{
+    font-size: 5rem;
+  }
+
+  .sm\:text-\[3rem\]{
+    font-size: 3rem;
+  }
+
+  .sm\:text-\[1rem\]{
+    font-size: 1rem;
+  }
+
+  .sm\:text-\[4rem\]{
+    font-size: 4rem;
   }
 }
 
@@ -3979,6 +4103,37 @@ p {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+
+  .md\:text-8xl{
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .md\:text-\[12rem\]{
+    font-size: 12rem;
+  }
+
+  .md\:text-\[16rem\]{
+    font-size: 16rem;
+  }
+
+  .md\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-\[2rem\]{
+    font-size: 2rem;
+  }
+
+  .md\:text-\[6rem\]{
+    font-size: 6rem;
+  }
+
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px){
@@ -4005,6 +4160,14 @@ p {
 
   .lg\:mt-20{
     margin-top: 5rem;
+  }
+
+  .lg\:mb-12{
+    margin-bottom: 3rem;
+  }
+
+  .lg\:mb-1{
+    margin-bottom: 0.25rem;
   }
 
   .lg\:h-48{
@@ -4111,6 +4274,11 @@ p {
     padding-right: 2rem;
   }
 
+  .lg\:px-1{
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
   .lg\:pr-2{
     padding-right: 0.5rem;
   }
@@ -4141,6 +4309,40 @@ p {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .lg\:text-9xl{
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .lg\:text-\[14rem\]{
+    font-size: 14rem;
+  }
+
+  .lg\:text-\[18rem\]{
+    font-size: 18rem;
+  }
+
+  .lg\:text-7xl{
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .lg\:text-\[5rem\]{
+    font-size: 5rem;
+  }
+
+  .lg\:text-\[4rem\]{
+    font-size: 4rem;
+  }
+
+  .lg\:text-\[8rem\]{
+    font-size: 8rem;
+  }
+
+  .lg\:text-\[2rem\]{
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 1280px){
@@ -4151,6 +4353,114 @@ p {
   .xl\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .xl\:text-8xl{
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .xl\:text-\[10rem\]{
+    font-size: 10rem;
+  }
+
+  .xl\:text-\[16rem\]{
+    font-size: 16rem;
+  }
+
+  .xl\:text-\[20rem\]{
+    font-size: 20rem;
+  }
+
+  .xl\:text-\[14rem\]{
+    font-size: 14rem;
+  }
+
+  .xl\:text-\[5rem\]{
+    font-size: 5rem;
+  }
+
+  .xl\:text-\[3rem\]{
+    font-size: 3rem;
+  }
+
+  .xl\:text-\[2rem\]{
+    font-size: 2rem;
+  }
+
+  .xl\:text-\[6rem\]{
+    font-size: 6rem;
+  }
+
+  .xl\:text-\[1\.5rem\]{
+    font-size: 1.5rem;
+  }
+
+  .xl\:text-\[1\.75rem\]{
+    font-size: 1.75rem;
+  }
+
+  .xl\:text-\[12em\]{
+    font-size: 12em;
+  }
+
+  .xl\:text-\[1rem\]{
+    font-size: 1rem;
+  }
+
+  .xl\:text-\[rem\]{
+    color: rem;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:text-9xl{
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-\[12rem\]{
+    font-size: 12rem;
+  }
+
+  .\32xl\:text-\[18rem\]{
+    font-size: 18rem;
+  }
+
+  .\32xl\:text-\[22rem\]{
+    font-size: 22rem;
+  }
+
+  .\32xl\:text-\[14rem\]{
+    font-size: 14rem;
+  }
+
+  .\32xl\:text-\[r5em\]{
+    font-size: r5em;
+  }
+
+  .\32xl\:text-\[5rem\]{
+    font-size: 5rem;
+  }
+
+  .\32xl\:text-\[5\.0rem\]{
+    font-size: 5.0rem;
+  }
+
+  .\32xl\:text-\[8rem\]{
+    font-size: 8rem;
+  }
+
+  .\32xl\:text-\[2rem\]{
+    font-size: 2rem;
+  }
+
+  .\32xl\:text-\[3rem\]{
+    font-size: 3rem;
+  }
+
+  .\32xl\:text-\[rem\]{
+    color: rem;
   }
 }
 
