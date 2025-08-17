@@ -66,7 +66,9 @@ export interface Event {
   title: string;
   date: string;
   time?: string;
+  dateText?: string;
   summary: string;
   description: string[];
+  image?: string;
   speakers?: string[];
 }

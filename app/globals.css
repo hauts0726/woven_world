@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -889,73 +887,89 @@ p {
 
 /* TOP page specific font size adjustments - Individual control for each element */
 
-/* Hero Section */
+/* Hero Section - 画面サイズに応じて自動調整 */
 .top-hero-main-title {
-  font-size: clamp(3.5rem, 7vw, 2.5rem) !important;
-  line-height: 1 !important;
+  font-size: clamp(1.8rem, 6vw, 4rem) !important;
+  line-height: 1.1 !important;
 }
 
 .top-hero-subtitle {
-  font-size: clamp(1rem, 4.5vw, 1.5rem) !important;
-  line-height: 1.5 !important;
+  font-size: clamp(0.9rem, 3.5vw, 2rem) !important;
+  line-height: 1.4 !important;
 }
 
 .top-hero-date {
-  font-size: clamp(1.05rem, 2.6vw, 1.25rem) !important;
+  font-size: clamp(0.8rem, 2.2vw, 1.2rem) !important;
   line-height: 1.5 !important;
 }
 
-/* Intro Section */
+/* Intro Section - より細かい調整 */
 .top-intro-section-heading {
-  font-size: clamp(1.3rem, 3.1vw, 1.55rem) !important;
-  line-height: 1.35 !important;
+  font-size: clamp(1.1rem, 4vw, 2.5rem) !important;
+  line-height: 1.3 !important;
 }
 
 .top-intro-emphasis-text {
-  font-size: clamp(1.25rem, 2.9vw, 1.45rem) !important;
-  line-height: 1.45 !important;
+  font-size: clamp(1rem, 3.5vw, 2rem) !important;
+  line-height: 1.4 !important;
 }
 
 .top-intro-main-text {
-  font-size: clamp(1.05rem, 2.5vw, 1.2rem) !important;
+  font-size: clamp(0.85rem, 2.5vw, 1.1rem) !important;
   line-height: 1.7 !important;
 }
 
 .top-intro-closing-text {
-  font-size: clamp(1.1rem, 2.6vw, 1.25rem) !important;
+  font-size: clamp(0.9rem, 2.8vw, 1.15rem) !important;
   line-height: 1.65 !important;
 }
 
 .top-intro-credit {
-  font-size: clamp(0.95rem, 2.2vw, 1.1rem) !important;
+  font-size: clamp(0.8rem, 2.2vw, 1rem) !important;
   line-height: 1.5 !important;
 }
 
 /* Chapters Section */
 .top-chapters-section-title {
-  font-size: clamp(1.7rem, 3.8vw, 2.1rem) !important;
+  font-size: clamp(1.2rem, 4.5vw, 2.5rem) !important;
   line-height: 1.25 !important;
 }
 
 .top-chapter-individual-title {
-  font-size: clamp(1.3rem, 3.2vw, 1.65rem) !important;
+  font-size: clamp(1rem, 3.5vw, 1.8rem) !important;
   line-height: 1.3 !important;
 }
 
 .top-chapter-intro-text {
-  font-size: clamp(0.95rem, 2.3vw, 1.15rem) !important;
+  font-size: clamp(0.8rem, 2.3vw, 1.1rem) !important;
   line-height: 1.65 !important;
 }
 
 .top-chapter-description {
-  font-size: clamp(0.85rem, 2.1vw, 1.05rem) !important;
+  font-size: clamp(0.75rem, 2vw, 1rem) !important;
   line-height: 1.6 !important;
 }
 
 /* Events Section */
 .top-events-section-title {
-  font-size: clamp(1.65rem, 3.7vw, 2.05rem) !important;
+  font-size: clamp(1.2rem, 4.2vw, 2.2rem) !important;
   line-height: 1.25 !important;
+}
+
+/* 新しいレスポンシブテキストクラス */
+.responsive-text-adaptive {
+  font-size: clamp(0.8rem, 2.5vw, 1.1rem) !important;
+  line-height: 1.6 !important;
+}
+
+.responsive-heading-adaptive {
+  font-size: clamp(1.1rem, 4vw, 2.5rem) !important;
+  line-height: 1.3 !important;
+}
+
+.responsive-emphasis-adaptive {
+  font-size: clamp(1rem, 3.5vw, 2rem) !important;
+  line-height: 1.4 !important;
 }
 
 /* Fine-tuning utilities for incremental adjustments */

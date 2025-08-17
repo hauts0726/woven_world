@@ -21,12 +21,13 @@ interface PageTransitionProps {
 
 export default function PageTransition({ children }: PageTransitionProps) {
   const pathname = usePathname();
+  const disableForThisPath = typeof pathname === 'string' && pathname.startsWith('/events');
+
   const [isVisible, setIsVisible] = useState(true);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [displayChildren, setDisplayChildren] = useState(children);
 
   useEffect(() => {
-    // 初回ロード時は即座に表示
     if (!isTransitioning) {
       setIsVisible(true);
       setDisplayChildren(children);
@@ -34,31 +35,44 @@ export default function PageTransition({ children }: PageTransitionProps) {
   }, [children, isTransitioning]);
 
   useEffect(() => {
-    // ページが変わったときの処理
-    if (isTransitioning) {
-      // 新しいコンテンツを設定してからフェードイン
+    if (disableForThisPath) {
+      setIsVisible(true);
+      setIsTransitioning(false);
       setDisplayChildren(children);
-      
+      return;
+    }
+
+    if (isTransitioning) {
+      setDisplayChildren(children);
       const timer = setTimeout(() => {
         setIsVisible(true);
         setIsTransitioning(false);
-      }, 200);
-
+      }, 300);
       return () => clearTimeout(timer);
     }
-  }, [pathname, children, isTransitioning]);
+  }, [pathname, children, isTransitioning, disableForThisPath]);
 
   const startTransition = () => {
+    if (disableForThisPath) return;
     setIsTransitioning(true);
     setIsVisible(false);
   };
 
+  if (disableForThisPath) {
+    return (
+      <PageTransitionContext.Provider value={{ isTransitioning: false, startTransition }}>
+        {children}
+      </PageTransitionContext.Provider>
+    );
+  }
+
   return (
     <PageTransitionContext.Provider value={{ isTransitioning, startTransition }}>
       <div
-        className={`transition-all duration-[6000ms] ease-in-out ${
-          isVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'
+        className={`transition-opacity duration-300 ease-in-out ${
+          isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
+        style={{ willChange: 'opacity' }}
       >
         {displayChildren}
       </div>

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo, useCallback } from 'react'
 import chapters from '@/data/chapters.json'
 import { Chapter } from '@/types'
 
@@ -9,8 +9,8 @@ export default function CompactNavButtons() {
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0)
   const [isVisible, setIsVisible] = useState(false)
   
-  // セクション定義
-  const sections = [
+  // セクション定義をuseMemoで最適化
+  const sections = useMemo(() => [
     { id: 'top', name: 'TOP' },
     { id: 'intro', name: 'はじめに' },
     ...((chapters as Chapter[]).map(chapter => ({ 
@@ -18,48 +18,54 @@ export default function CompactNavButtons() {
       name: `第${chapter.id}章` 
     }))),
     { id: 'events', name: 'イベント' }
-  ]
+  ], [])
+
+  const handleScroll = useCallback(() => {
+    const scrollY = window.scrollY
+    
+    // 100px以上スクロールしたら表示
+    setIsVisible(scrollY > 100)
+    
+    // 現在のセクションを判定
+    const sectionElements = sections.map(section => {
+      const element = document.getElementById(section.id)
+      if (element) {
+        return {
+          id: section.id,
+          offsetTop: element.offsetTop,
+          offsetHeight: element.offsetHeight
+        }
+      }
+      return null
+    }).filter(Boolean)
+    
+    const scrollPosition = scrollY + window.innerHeight / 2
+    
+    let foundIndex = 0
+    for (let i = 0; i < sectionElements.length; i++) {
+      const element = sectionElements[i]
+      if (element && scrollPosition >= element.offsetTop) {
+        foundIndex = i
+      }
+    }
+    
+    setCurrentSectionIndex(foundIndex)
+  }, [sections])
 
   useEffect(() => {
     setMounted(true)
-    
-    const handleScroll = () => {
-      const scrollY = window.scrollY
-      
-      // 100px以上スクロールしたら表示
-      setIsVisible(scrollY > 100)
-      
-      // 現在のセクションを判定
-      const sectionElements = sections.map(section => {
-        const element = document.getElementById(section.id)
-        if (element) {
-          return {
-            id: section.id,
-            offsetTop: element.offsetTop,
-            offsetHeight: element.offsetHeight
-          }
-        }
-        return null
-      }).filter(Boolean)
-      
-      const scrollPosition = scrollY + window.innerHeight / 2
-      
-      let foundIndex = 0
-      for (let i = 0; i < sectionElements.length; i++) {
-        const element = sectionElements[i]
-        if (element && scrollPosition >= element.offsetTop) {
-          foundIndex = i
-        }
-      }
-      
-      setCurrentSectionIndex(foundIndex)
-    }
+  }, [])
+
+  useEffect(() => {
+    if (!mounted) return
+
+    // 初期スクロール位置をチェック
+    handleScroll()
 
     window.addEventListener('scroll', handleScroll, { passive: true })
-    handleScroll()
     
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [sections])
+  }, [mounted, handleScroll])
 
   const scrollToSection = (index: number) => {
     if (index < 0 || index >= sections.length) return
@@ -103,7 +109,7 @@ export default function CompactNavButtons() {
 
   return (
     <div 
-      className={`fixed right-6 top-1/2 transform -translate-y-1/2 flex flex-col space-y-3 transition-all duration-500 z-50 ${
+      className={`fixed right-6 top-1/2 transform -translate-y-1/2 flex flex-col space-y-1 transition-all duration-500 z-50 ${
         isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16 pointer-events-none'
       }`}
     >

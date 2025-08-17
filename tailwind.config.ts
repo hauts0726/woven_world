@@ -67,7 +67,7 @@ const config: Config = {
     }
   },
   plugins: [
-    function({ addUtilities }: any) {
+    function({ addUtilities }: { addUtilities: (utilities: Record<string, Record<string, string>>) => void }) {
       const newUtilities = {
         '.fluid-text-xs': {
           fontSize: 'clamp(0.75rem, 1.5vw, 0.875rem)',
