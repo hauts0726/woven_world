@@ -274,9 +274,9 @@ export default function HomePage() {
                         </div>
                       )}
 
-                      {/* Chapter Artists & Sections - 第4章はカルーセル、その他は従来のレイアウト */}
-                      {chapter.id === 4 && chapterArtists.length > 0 ? (
-                        // 第4章：カルーセル機能を使用
+                      {/* Chapter Artists & Sections - 第2章と第4章はカルーセル、その他は従来のレイアウト */}
+                      {(chapter.id === 2 || chapter.id === 4) && chapterArtists.length > 0 ? (
+                        // 第2章・第4章：カルーセル機能を使用
                         <ArtistCarousel artists={chapterArtists} chapterId={chapter.id} />
                       ) : chapter.id !== 6 && chapterArtists.length > 0 && chapter.sections && chapter.sections.length > 0 ? (
                         // その他の章：従来のグリッドレイアウト

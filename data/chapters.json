@@ -23,14 +23,14 @@
         ]
       },
       {
-        "title": " – 釼持博",
-        "authorIds": ["kenmochi_hiroshi"],
+        "title": "",
+        "authorIds": ["umida-halilova"],
         "content": [
-          "和裁士・釼持博さんは、東京で60年以上にわたり着物を仕立ててきた生き字引のような存在です。"
+          "ウミダ・ハリロワさんは会社員という立場から身近な衣類である靴下に着目し、再生繊維を用いて持続可能性を探求した作品を制作しています。"
         ]
       }
     ],
-    "artists": ["okimoto-kei", "kono_chikayo", "kenmochi_hiroshi"]
+    "artists": ["okimoto-kei", "kono_chikayo", "umida-halilova"]
   },
   {
     "id": 2,
@@ -61,9 +61,16 @@
         "content": [
           "布が布に生まれ変わる、不思議な手法があります。愛媛県佐田岬半島に伝わる裂き織り（さきおり）です。"
         ]
+      },
+            {
+        "title": " – 釼持博",
+        "authorIds": ["kenmochi_hiroshi"],
+        "content": [
+          "和裁士・釼持博さんは、東京で60年以上にわたり着物を仕立ててきた生き字引のような存在です。"
+        ]
       }
     ],
-    "artists": ["negishi_keisuke", "okubo-mikiya", "hashida_toyo"]
+    "artists": ["negishi_keisuke", "okubo-mikiya", "hashida_toyo", "kenmochi_hiroshi"]
   },
   {
     "id": 3,
@@ -134,16 +141,9 @@
         "content": [
           "野口キララさんは学生ならではの柔軟な発想で、着物の裏地に着目した作品を生み出しました。"
         ]
-      },
-      {
-        "title": "ウミダ・ハリロワ",
-        "authorIds": ["umida-halilova"],
-        "content": [
-          "ウミダ・ハリロワさんは会社員という立場から身近な衣類である靴下に着目し、再生繊維を用いて持続可能性を探求した作品を制作しています。"
-        ]
       }
     ],
-    "artists": ["suzuki_yuta", "tange_megumi", "sumiya-yukiko", "noguchi-kirara", "umida-halilova"]
+    "artists": ["suzuki_yuta", "tange_megumi", "sumiya-yukiko", "noguchi-kirara"]
   },
   {
     "id": 5,

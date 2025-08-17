@@ -2,6 +2,7 @@ import chaptersData from '@/data/chapters.json';
 import artistsData from '@/data/artists.json';
 import ArtistCard from '@/components/ArtistCard';
 import BackButton from '@/components/BackButton';
+import KenmochiCarousel from '@/components/KenmochiCarousel';
 import { notFound } from 'next/navigation';
 import { Chapter, Artist } from '@/types';
 import Image from 'next/image';
@@ -177,6 +178,16 @@ export default async function ChapterDetail({ params }: { params: Promise<Params
                     />
                   ))}
                 </div>
+
+                {/* 釼持さん専用のカルーセル（第2章かつ釼持さんのセクションの場合） */}
+                {chapterId === 2 && section.authorIds?.includes('kenmochi_hiroshi') && (
+                  <div className="mt-12">
+                    {(() => {
+                      const kenmochiArtist = artists.find(a => a.id === 'kenmochi_hiroshi');
+                      return kenmochiArtist ? <KenmochiCarousel artist={kenmochiArtist} /> : null;
+                    })()}
+                  </div>
+                )}
               </div>
             );
           })}
