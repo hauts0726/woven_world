@@ -1,3 +1,4 @@
+// app/artists/[id]/page.tsx
 import artistsData from '@/data/artists.json';
 import chaptersData from '@/data/chapters.json';
 import eventsData from '@/data/events.json';
@@ -11,25 +12,31 @@ const artists: Artist[] = artistsData as Artist[];
 const chapters: Chapter[] = chaptersData as Chapter[];
 const events: Event[] = eventsData as Event[];
 
-interface Params {
-  id: string;
-}
+// Next.js 15: params は Promise として渡される（ローカル型で明示）
+type ArtistRouteParams = { id: string };
 
 export async function generateStaticParams() {
   return artists.map((a: Artist) => ({ id: a.id }));
 }
 
-export default function ArtistDetail({ params }: { params: Params }) {
-  const { id } = params;
-  const artist = artists.find(a => a.id === id);
+export default async function ArtistDetail({
+  params,
+}: {
+  params: Promise<ArtistRouteParams>;
+}) {
+  // ✅ Promise を await して取り出す
+  const { id } = await params;
+
+  const artist = artists.find((a) => a.id === id);
   if (!artist) notFound();
 
   // 依存する値はローカル変数に取り出して型を確定
   const streetLibrary = artist.streetLibrary ?? null;
   const artworks = artist.artworks ?? [];
+  const bioParas = Array.isArray(artist.bio) ? artist.bio : [];
 
-  const relatedChapters = chapters.filter(ch => ch.artists?.includes(artist.id));
-  const relatedEvents = events.filter(ev => ev.speakers && ev.speakers.includes(artist.id));
+  const relatedChapters = chapters.filter((ch) => ch.artists?.includes(artist.id));
+  const relatedEvents = events.filter((ev) => ev.speakers && ev.speakers.includes(artist.id));
 
   // ★ この2名のページだけ Photos を非表示（プロフィール写真はそのまま）
   const HIDE_PHOTOS_IDS = new Set(['kenmochi_hiroshi', 'suzuki_yuta']);
@@ -65,8 +72,11 @@ export default function ArtistDetail({ params }: { params: Params }) {
         <div className="flex-1 w-full lg:max-w-none">
           <div className="text-responsive-base sm:text-responsive-lg font-sans font-semibold mb-3 japanese-text">Profile</div>
           <div className="max-h-none lg:max-h-60 lg:overflow-y-auto">
-            {artist.bio.map((para: string, idx: number) => (
-              <p key={idx} className="mb-4 sm:mb-6 text-gray-800 japanese-text text-responsive-xs sm:text-responsive-sm leading-relaxed break-words">
+            {bioParas.map((para: string, idx: number) => (
+              <p
+                key={idx}
+                className="mb-4 sm:mb-6 text-gray-800 japanese-text text-responsive-xs sm:text-responsive-sm leading-relaxed break-words"
+              >
                 {para}
               </p>
             ))}
@@ -167,9 +177,7 @@ export default function ArtistDetail({ params }: { params: Params }) {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute bottom-0 left-0 right-0 p-1 sm:p-2 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                    <h3 className="text-responsive-xs font-medium japanese-text line-clamp-1 break-words">
-                      {artwork.title}
-                    </h3>
+                    <h3 className="text-responsive-xs font-medium japanese-text line-clamp-1 break-words">{artwork.title}</h3>
                   </div>
                 </div>
               </div>
